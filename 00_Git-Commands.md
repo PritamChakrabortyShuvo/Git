@@ -1,7 +1,5 @@
 # Git Necessary Commands
-## Git Commands: Working with the Staging Area
-This section explores how to efficiently manage changes in Git before committing them. It covers commands like **`git add`** to stage changes, **`git restore --staged`** to unstage them. These tools allow for fine-tuning what gets included in each commit.
-
+## Git Commands : Working with the Staging Area
 Stages all modified and new files in the current directory and its subdirectories for the next commit.
 ```bash
     git add .
@@ -23,7 +21,6 @@ Discards changes in the specified file in the working directory restoring it to 
     git restore filename
 ```
 ## Git Commands: Commit Management and Log Viewing
-This section focuses on handling commits and reviewing the project history in Git. It covers commands like **`git commit`** to create snapshots, **`git commit --amend`** to modify previous commits & **`git log`** to view a detailed history of changes. These tools help in managing the evolution of a project and tracking progress over time.
 Creates a new commit with the changes that have been staged, using the provided commit message.
 ```bash
     git commit -m "Your commit message here"
@@ -56,9 +53,7 @@ Shows the current status of the working directory and staging area, indicating w
 ```bash
     git status
 ```
-## Git Command: Removing Files from Working and Staging Areas
-This section explains how to delete files from both the working directory and the Git staging area. It covers commands like **`git rm`** to remove files and stage the deletion & **`git rm --cached`** to unstage files while keeping them in the working directory. These commands ensure effective file management within the Git repository.
-
+## Git Command : Removing Files from Working and Staging Areas
 To delete a specific file from both the working directory and the repository run
 ```bash
     git rm filename
