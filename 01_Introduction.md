@@ -90,3 +90,47 @@ If you’ve made changes to a file and want to discard them (i.e., revert the fi
     git restore filename
 ```
 This command affects the working directory
+## Git Commit
+### What is Commit?
+A Git commit represents a snapshot of the project at a specific point in time. It stores changes made to the files in a repository and forms the backbone of Git's version control.
+
+A commit includes:
+- **Author information (name and email)**
+- **Commit message (a brief description of the changes)**
+- **Changes (diff) (what was added, modified or deleted)**
+
+### Commit Commands
+To create a commit, the workflow usually involves
+#### 1. Commiting
+Changes to files must be staged using the **`git add`** command.
+
+Once the changes are staged we create a commit using **`git commit`**
+```bash
+    git commit -m "Your commit message here"
+```
+#### 2. Amending Commits
+If a mistake is made in the most recent commit, we can amend it:
+```bash
+    git commit --amend -m "Updated commit message"
+```
+This command allows modifying the commit message or the content of the previous commit.
+#### 3. Viewing Commits
+We can view the history of commits using the **`git log command`**
+```bash
+    git log
+```
+This will display the commit hashes, author, date and messages.
+### Commit Message Guidelines
+- **Be clear :** The message should describe the changes and why they were made.
+- **Use imperative mood :** Commit messages should describe what the commit does when applied, such as:
+    - **`"Fix typo in README"`**
+    - **`"Add new authentication method"`**
+#### Here are more concise descriptions for different types of Git commits:
+- **Added Image :** Included a new image or diagram.
+- **Fixed Typo :** Corrected a spelling mistake.
+- **Fixed Syntax :** Corrected errors in code or formatting.
+- **Added Bold Text :** Highlighted important keywords.
+- **Fixed Heading :** Edited or restructured a heading.
+- **Updated Image :** Replaced an outdated diagram with a new one.
+- **Refined Content :** Improved the clarity or readability of text.
+- **Fixed Comments :** Improved explanations in code comments.
