@@ -87,14 +87,17 @@ The working area is the local directory where you create and modify files for yo
 The staging area (also known as the index) is an intermediate space where changes are prepared before being committed to the repository. It acts as a buffer between the working area and the committed state.
 #### Characteristics
 - **Marked for Inclusion :** When you add files to the staging area using the git add command, you mark them for inclusion in the next commit. This allows you to select which changes you want to commit.
-- **Snapshot of Changes :** The staging area holds a snapshot of the changes you have staged. This snapshot will be saved in the next commit, allowing you to control what gets committed.
+- **Snapshot of Changes :** The staging area holds a snapshot of the changes you have staged. This snapshot will be saved in the next commit allowing you to control what gets committed.
 - **Selective Committing :** You can stage individual files or specific changes within files, giving you fine-grained control over your commit history.
 
 ### Committed Files
 #### Definition
 Committed files are those that have been saved to the Git repository. A commit is a snapshot of the project at a specific point in time.
 #### Characteristics
-- **Tracked Changes :** Once files are committed, Git tracks their changes, allowing you to revisit the commit history at any time.
-- **Commit History :** Each commit is associated with a unique identifier (hash) and contains metadata, including the author, date, and commit message. This history allows you to understand the evolution of your project.
-- **Revisions :** Committed files can be reverted, modified, or compared with other commits using various Git commands. This feature is crucial for collaboration and maintaining the integrity of the project over time.
+- **Tracked Changes :** Once files are committed git tracks their changes allowing you to revisit the commit history at any time.
+- **Commit History :** Each commit is associated with a unique identifier (hash) and contains metadata, including the author, date & commit message. This history allows you to understand the evolution of your project.
+- **Revisions :** Committed files can be reverted, modified or compared with other commits using various Git commands. This feature is crucial for collaboration & maintaining the integrity of the project over time.
 
+<div align="center">
+    <img src="Diagrams/Git-Areas.png" alt="Project Logo" width=90%>
+</div>
