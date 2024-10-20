@@ -36,9 +36,9 @@ Git supports two main types of repositories.
 </div>
 
 ### 1. Local Repository 
-This is a repository stored on our **local machine** where we can work independently. Each developer has a complete copy of the project including the **entire version history**. Changes are made ***locally** & **can be committed to the local repository** without needing to connect to any **remote server**. In a Local Repository, Git manages changes through three main areas:
+This is a repository stored on our **local machine** where **we can work independently**. Each developer has a complete copy of the project including the **entire version history**. Changes are made **locally** & **can be committed to the local repository** without needing to connect to any **remote server**. In a Local Repository, Git manages changes through **three main areas** :
 1. **Working Area**
-This is the directory **where we actively make changes to files**. Any **edits**, **additions** or **deletions** happen here but they are not yet tracked by Git until we stage them.
+This is the directory **where we actively make changes to files**. Any **edits**, **additions** or **deletions** happen here but they are **not yet tracked** by **Git** until **we stage them**.
 2. **Staging Area (also known as the Index)**
 The staging area is a **holding space** between the **working area & the repository**. When we decide to track certain changes **we add them to the staging area** with **`git add`**. It holds a snapshot of what will be included in the next commit.
 3. **Commit**
@@ -56,40 +56,6 @@ A **remote repository is hosted on a server** & is typically used to **share cod
 2. Staging
 3. Tracking New Files
 4. Removing Changes from Staging
-
-### Git add Commnads
-#### 1. Stage All Changes
-To stage all the modified and new files in your working directory.
-```bash
-    git add .
-```
-#### 2. Stage a Specific File 
-To stage a particular file, specify its name.
-```bash
-    git add filename
-```
-#### 3. Stage Multiple Files
-To stage several files at once.
-```bash
-    git add file1 file2 file3
-```
-#### 4. Stage a Directory
-To stage all changes within a specific directory.
-```bash
-    git add Directory_Name/
-```
-#### 5. Unstaging a File
-Unstages a file but keeps the changes in the working directory.
-```bash
-    git restore --staged filename
-```
-This command affects the staging area without touching the working directory's changes.
-#### 6. Restoring a File to Its Last Committed State
-If you’ve made changes to a file and want to discard them (i.e., revert the file to its last committed version), you can use:
-```bash
-    git restore filename
-```
-This command affects the working directory
 ## Git Commit
 ### What is Commit?
 **Git commit** represents a **snapshot of the project at a specific point in time**. It stores changes made to the files in a repository and forms the backbone of Git's version control.
@@ -98,28 +64,6 @@ A commit includes:
 - **Author information (name and email)**
 - **Commit message (a brief description of the changes)**
 - **Changes (diff) (what was added, modified or deleted)**
-
-### Commit Commands
-To create a commit, the workflow usually involves
-#### 1. Commiting
-Changes to files must be staged using the **`git add`** command.
-
-Once the changes are staged we create a commit using **`git commit`**
-```bash
-    git commit -m "Your commit message here"
-```
-#### 2. Amending Commits
-If a mistake is made in the most recent commit, we can amend it:
-```bash
-    git commit --amend -m "Updated commit message"
-```
-This command allows modifying the commit message or the content of the previous commit.
-#### 3. Viewing Commits
-We can view the history of commits using the **`git log command`**
-```bash
-    git log
-```
-This will display the commit hashes, author, date and messages.
 ### Commit Message Guidelines
 - **Be clear :** The message should describe the changes and why they were made.
 - **Use imperative mood :** Commit messages should describe what the commit does when applied, such as:
