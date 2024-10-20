@@ -47,3 +47,46 @@ Once changes are staged, we can create a commit using **`git commit`**, which sa
 These three areas form the basic workflow in Git ensuring changes are carefully managed before being permanently recorded in the repository.
 ### 2. Remote Repository
 A remote repository is hosted on a server and is typically used to share code among team members or backup the project. Multiple developers can collaborate by pushing their changes to and pulling updates from the remote repository. Popular remote hosting services include GitHub, GitLab & Bitbucket.
+
+## Git Add
+### What is git add?
+Git add is a command used to stage changes in Git preparing them to be included in the next commit. It doesn’t actually commit the changes it simply moves modified or new files from the working area to the staging area (also known as the "index"). This step is crucial in Git’s workflow because only staged changes can be committed.
+### Key Concepts of git add
+1. Staging Changes
+2. Staging
+3. Tracking New Files
+4. Removing Changes from Staging
+
+### Git add Commnads
+#### 1. Stage All Changes
+To stage all the modified and new files in your working directory.
+```bash
+    git add .
+```
+#### 2. Stage a Specific File 
+To stage a particular file, specify its name.
+```bash
+    git add filename
+```
+#### 3. Stage Multiple Files
+To stage several files at once.
+```bash
+    git add file1 file2 file3
+```
+#### 4. Stage a Directory
+To stage all changes within a specific directory.
+```bash
+    git add Directory_Name/
+```
+#### 5. Unstaging a File
+Unstages a file but keeps the changes in the working directory.
+```bash
+    git restore --staged filename
+```
+This command affects the staging area without touching the working directory's changes.
+#### 6. Restoring a File to Its Last Committed State
+If you’ve made changes to a file and want to discard them (i.e., revert the file to its last committed version), you can use:
+```bash
+    git restore filename
+```
+This command affects the working directory
