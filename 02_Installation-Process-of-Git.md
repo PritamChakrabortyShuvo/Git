@@ -27,3 +27,32 @@ Open Command Prompt or PowerShell and Run :
     git --version
 ```
 This will output the installed Git version if successful.
+## Installation Process of Git on Ubuntu(Linux)
+### Step 1. Update the System
+Open the terminal and run the following commands:
+```bash
+sudo apt update
+```
+And,
+```bash
+    sudo apt upgrade
+```
+### Step 2. Install Git
+To install Git, run
+```bash
+    sudo apt install git
+```
+### Step 3. Verify Installation
+After installation, check the version to ensure it's installed correctly.
+```bash
+    git --version
+```
+### Step 4. Set up Git Configuration
+To configure Git with your username and email
+```bash 
+    git config --global user.name "Your Name"
+```
+And,
+```bash
+    git config --global user.email "your.email@example.com"
+```
