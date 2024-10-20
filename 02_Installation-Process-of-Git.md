@@ -27,6 +27,22 @@ Open Command Prompt or PowerShell and Run :
     git --version
 ```
 This will output the installed Git version if successful.
+### Step 4. Set Up Git Configuratio
+Open Git Bash or Command Prompt. In the terminal window enter the following command replacing **`"Your Name"`** with your actual name:
+```bash
+    git config --global user.name "Your Name"
+```
+Next enter the following command replacing **`"your.email@example.com"`** with your actual email address:
+```bash
+    git config --global user.email "your.email@example.com"
+```
+This command sets your email address, which will be linked to your Git commits.
+### Step 5. Verify Your Configuration
+To ensure that your username and email are set correctly, run the following command
+```bash
+    git config --global --list
+```
+This will display your Git configuration settings, and you should see your username and email listed.
 ## Installation Process of Git on Ubuntu(Linux)
 ### Step 1. Update the System
 Open the terminal and run the following commands:
@@ -38,12 +54,12 @@ And,
     sudo apt upgrade
 ```
 ### Step 2. Install Git
-To install Git, run
+To install Git run
 ```bash
     sudo apt install git
 ```
 ### Step 3. Verify Installation
-After installation, check the version to ensure it's installed correctly.
+After installation check the version to ensure it's installed correctly.
 ```bash
     git --version
 ```
