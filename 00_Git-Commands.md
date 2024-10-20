@@ -2,7 +2,6 @@
 ## Git Commands: Working with the Staging Area
 This section explores how to efficiently manage changes in Git before committing them. It covers commands like **`git add`** to stage changes, **`git restore --staged`** to unstage them. These tools allow for fine-tuning what gets included in each commit.
 
-This section explores how to efficiently manage changes in Git before committing them. It covers commands like **`git add`** to stage changes, **`git restore --staged`** to unstage them. These tools allow for fine-tuning what gets included in each commit.
 Stages all modified and new files in the current directory and its subdirectories for the next commit.
 ```bash
     git add .
@@ -24,6 +23,7 @@ Discards changes in the specified file in the working directory restoring it to 
     git restore filename
 ```
 ## Git Commands: Commit Management and Log Viewing
+This section focuses on handling commits and reviewing the project history in Git. It covers commands like **`git commit`** to create snapshots, **`git commit --amend`** to modify previous commits & **`git log`** to view a detailed history of changes. These tools help in managing the evolution of a project and tracking progress over time.
 Creates a new commit with the changes that have been staged, using the provided commit message.
 ```bash
     git commit -m "Your commit message here"
