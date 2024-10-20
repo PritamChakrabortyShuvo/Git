@@ -27,7 +27,7 @@ Open Command Prompt or PowerShell and Run :
     git --version
 ```
 This will output the installed Git version if successful.
-### Step 4. Set Up Git Configuratio
+### Step 4. Set Up Git Configuration
 Open Git Bash or Command Prompt. In the terminal window enter the following command replacing **`"Your Name"`** with your actual name:
 ```bash
     git config --global user.name "Your Name"
