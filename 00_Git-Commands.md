@@ -54,3 +54,23 @@ Shows the current status of the working directory and staging area, indicating w
 ```bash
     git status
 ```
+## Git Command: Removing Files from Working and Staging Areas
+To delete a specific file from both the working directory and the repository run
+```bash
+    git rm filename
+```
+To remove an entire directory and its contents
+```bash
+    git rm -r directoryname/
+```
+If a file has been modified and we want to remove it without checking for changes (which would normally prevent deletion):
+```bash
+    git rm -f filename
+```
+If we want to unstage a file (remove it from the staging area) without deleting it from the working directory, we can use
+```bash
+    git rm --cached filename
+```
+### Important Considerations:
+After using git rm, we must commit the changes to finalize the removal in the repository.
+Be cautious when using git rm, especially with the force option, as it permanently deletes files from the working directory and may lead to data loss if not handled properly.
