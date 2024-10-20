@@ -20,7 +20,7 @@ Discards changes in the specified file in the working directory restoring it to 
 ```bash
     git restore filename
 ```
-## Git Commands: Commit Management and Log Viewing
+## Git Commands : Commit Management and Log Viewing
 Creates a new commit with the changes that have been staged, using the provided commit message.
 ```bash
     git commit -m "Your commit message here"
