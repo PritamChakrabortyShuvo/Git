@@ -29,8 +29,8 @@ Git is a distributed version control system designed to track changes in source 
 
 ## Git Repository Types
 Git supports two main types of repositories.
-1. Local Repository
-2. Remote Repository
+1. **Local Repository**
+2. **Remote Repository**
 <div align="center">
     <img src="Diagrams/Repository-Types.png" alt="Project Logo" width=70%>
 </div>
