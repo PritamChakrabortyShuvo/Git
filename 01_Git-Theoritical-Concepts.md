@@ -131,7 +131,7 @@ We can create a branch at any point. A branch is simply a pointer to a specific 
 Let's dive into branch merging and management in a team environment.
 ### 1. Merging Branches
 Merging in Git combines the changes from one branch into another, often to incorporate new features or fixes into the **`main branch`**. There are two common types of merges:
-- **Fast-Forward Merge :** Happens when there’s no new work on the **`main branch`** since the **`feature branch`** was created. The **`main branch`** pointer just moves to the latest commit of the **`feature branch`**.
+- **Fast-Forward Merge :** If there are no new commits on the **`main branch`**, Git can move the branch pointer forward without creating a new commit this is called a **Fast-Forward Merge**. It happens automatically if the branches haven’t diverged.
 - **Three-Way Merge :** Happens when both the main and feature branches have new commits. Git creates a new commit to combine changes from both branches.
 ### 2. How to Merge
 1. **Switch to the Main Branch** (where the changes need to go).
