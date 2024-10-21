@@ -117,3 +117,26 @@ To list all branches.
 ```bash
     git branch
 ```
+## Git Commands : Merging
+### Merging a Branch into the Current Branch
+1. First, switch to the branch you want to merge into (often the **`main branch`**)
+```bash
+    git checkout <target-branch>
+```
+2. Then, merge the branch you want to bring changes from
+```bash
+    git merge <source-branch>
+```
+**Example :** Merging **`feature-login`** into **`main`**
+```bash
+    git checkout main
+```
+Then,
+```bash
+    git merge feature-login
+```
+### Aborting a Merge
+If you run into conflicts or decide not to complete the merge you can cancel it by using
+```bash
+    git merge --abort
+```
