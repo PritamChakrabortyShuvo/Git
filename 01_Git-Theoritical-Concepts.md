@@ -127,25 +127,27 @@ We can create a branch at any point. A branch is simply a pointer to a specific 
 - **Merge frequently :** To avoid large, complicated merges, it’s a good idea to merge branches back into the main branch regularly.
 - **Delete branches :** After a branch has been merged, it’s often deleted to keep the repository clean.
 
-## Branch Merging Deep Dive
-Let's dive into branch merging and management in a team environment.
-### 1. Merging Branches
+Let's dive into branch merging and management in a **team environment**.
+#### 1. Merging Branches
 Merging in Git combines the changes from one branch into another, often to incorporate new features or fixes into the **`main branch`**. There are two common types of merges:
 - **Fast-Forward Merge :** If there are no new commits on the **`main branch`**, Git can move the branch pointer forward without creating a new commit this is called a **Fast-Forward Merge**. It happens automatically if the branches haven’t diverged.
 - **Three-Way Merge :** Happens when both the main and feature branches have new commits. Git creates a new commit to combine changes from both branches.
-### 2. How to Merge
+#### 2. How to Merge
 1. **Switch to the Main Branch** (where the changes need to go).
 2. **Merge the Feature Branch into the Main Branch**.
 3. **Resolve Conflicts if any occur** (e.g., both branches changed the same line of code).
-### 3. Merge Conflicts
+#### 3. Merge Conflicts
 1. When two branches change the same part of a file, Git cannot automatically merge and shows a conflict.
 2. We edit the file to choose which changes to keep.
 3. After resolving, commit the merge to finalize it.
-### 4. Working in Teams
+#### 4. Working in Teams
 - **Use Feature Branches :** Each developer works on their own branch for a task or feature. Once done they merge their branch into the **`main branch`**.
 - **Merge Frequently :** To avoid conflicts keep merging changes from the main branch into your **`feature branch`** regularly.
 - **Pull Requests (PRs) :** Before merging into the **`main branch`** the team can review the changes in a pull request to ensure everything looks good.
-### 5. Best Practices
+#### 5. Best Practices
 - **Keep Branches Short :** Don't work on a **`feature branch`** for too long before merging it. Smaller, more frequent merges are easier to manage.
 - **Review code before Merging :** Use pull requests to get feedback from the team before adding changes to the main branch.
 - **Handle Conflicts Early :** Resolve conflicts as soon as they come up so they don’t pile up.
+<div align="center">
+    <img src="Diagrams/Branching.png" alt="Project Logo" width=70%>
+</div>
