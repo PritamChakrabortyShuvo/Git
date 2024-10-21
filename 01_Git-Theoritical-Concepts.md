@@ -105,7 +105,6 @@ Committed files are those that have been saved to the Git repository. A commit i
 <div align="center">
     <img src="Diagrams/Areas-in-Git.png" alt="Project Logo" width=80%>
 </div>
-<<<<<<< HEAD
 
 ## Git Branches
 Git **branches** are an essential feature of version control that **allow us to work on different versions of a project simultaneously**. Branches enable **isolated development** meaning we can work on **new features**, **bug fixes** or **experiments** without **affecting the main codebase**. Here’s how Git branches work:
