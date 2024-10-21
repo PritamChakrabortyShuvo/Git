@@ -33,7 +33,7 @@ Git supports two main types of repositories.
 2. **Remote Repository**
 
 <div align="center">
-    <img src="Diagrams/Repository.png" alt="Project Logo" width=90%>
+    <img src="Diagrams/Local-Remote-Repository-Architecture.png" alt="Project Logo" width=90%>
 </div>
 
 ### 1. Local Repository 
