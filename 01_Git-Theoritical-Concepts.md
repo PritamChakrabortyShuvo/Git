@@ -105,6 +105,7 @@ Committed files are those that have been saved to the Git repository. A commit i
 <div align="center">
     <img src="Diagrams/Areas-in-Git.png" alt="Project Logo" width=80%>
 </div>
+<<<<<<< HEAD
 
 ## Git Branches
 Git **branches** are an essential feature of version control that **allow us to work on different versions of a project simultaneously**. Branches enable **isolated development** meaning we can work on **new features**, **bug fixes** or **experiments** without **affecting the main codebase**. Here’s how Git branches work:
@@ -126,3 +127,5 @@ We can create a branch at any point. A branch is simply a pointer to a specific 
 - **Use Meaningful Names :** Name branches based on the feature or task, making it easy to understand the purpose of each branch.
 - **Merge frequently :** To avoid large, complicated merges, it’s a good idea to merge branches back into the main branch regularly.
 - **Delete branches :** After a branch has been merged, it’s often deleted to keep the repository clean.
+=======
+>>>>>>> 6b823793a3d1ea6e8e70868063596201a8a2b838
