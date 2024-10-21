@@ -102,3 +102,6 @@ Committed files are those that have been saved to the Git repository. A commit i
 - **Tracked Changes :** Once files are committed git tracks their changes allowing you to revisit the commit history at any time.
 - **Commit History :** Each commit is associated with a unique identifier (hash) and contains metadata, including the author, date & commit message. This history allows you to understand the evolution of your project.
 - **Revisions :** Committed files can be reverted, modified or compared with other commits using various Git commands. This feature is crucial for collaboration & maintaining the integrity of the project over time.
+<div align="center">
+    <img src="Diagrams/Areas-in-Git.png" alt="Project Logo" width=80%>
+</div>
