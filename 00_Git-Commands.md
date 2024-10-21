@@ -73,3 +73,47 @@ If we want to unstage a file (remove it from the staging area) without deleting 
 ### Important Considerations:
 - After using **`git rm`** we must commit the changes to finalize the removal in the repository.
 - Be cautious when using **`git rm`** especially with the force option as it permanently deletes files from the working directory & may lead to data loss if not handled properly.
+
+## Git Commands : Branches
+To create a new branch run :
+```bash
+    git branch <branch_name>
+```
+Switch to an existing branch run :
+```bash
+    git checkout <branch_name>
+```
+Create a new branch and switch to it 
+```bash
+    git checkout -b <new_branch_name>
+```
+To delete a branch, run :
+```bash
+    git branch -d <branch_name>
+```
+**Note :** After merging, it's good practice to delete the branch.
+
+If the branch hasn't been merged yet & you still want to delete it
+```bash
+    git branch -D <branch-name>
+```
+To rename the current branch, run :
+```bash
+    git branch -m <new-branch-name>
+```
+To push a local branch to the remote repository, run :
+```bash
+    git push origin <branch-name>
+```
+To pull changes from a specific branch on the remote repository, run :
+```bash
+    git pull origin <branch-name>
+```
+When you create a new branch and push it to the remote you can also set it to track the remote branch
+```bash
+    git push -u origin <branch-name>
+```
+To list all branches, run :
+```bash
+    git branch
+```
