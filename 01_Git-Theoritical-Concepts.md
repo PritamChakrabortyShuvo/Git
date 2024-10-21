@@ -130,32 +130,22 @@ We can create a branch at any point. A branch is simply a pointer to a specific 
 ## Branch Merging Deep Dive
 Let's dive into branch merging and management in a team environment.
 ### 1. Merging Branches
-Merging in Git combines the changes from one branch into another, often to incorporate new features or fixes into the main branch. There are two common types of merges:
-#### Fast-forward Merge
-Happens when there’s no new work on the main branch since the feature branch was created. The main branch pointer just moves to the latest commit of the feature branch.
-#### Three-Way Merge 
-Happens when both the main and feature branches have new commits. Git creates a new commit to combine changes from both branches.
+Merging in Git combines the changes from one branch into another, often to incorporate new features or fixes into the **`main branch`**. There are two common types of merges:
+- **Fast-Forward Merge :** Happens when there’s no new work on the **`main branch`** since the **`feature branch`** was created. The **`main branch`** pointer just moves to the latest commit of the **`feature branch`**.
+- **Three-Way Merge :** Happens when both the main and feature branches have new commits. Git creates a new commit to combine changes from both branches.
 ### 2. How to Merge
-1. **Switch to the main branch** (where the changes need to go).
-2. **Merge the feature branch into the main branch**.
-3. **Resolve conflicts if any occur** (e.g., both branches changed the same line of code).
+1. **Switch to the Main Branch** (where the changes need to go).
+2. **Merge the Feature Branch into the Main Branch**.
+3. **Resolve Conflicts if any occur** (e.g., both branches changed the same line of code).
 ### 3. Merge Conflicts
 1. When two branches change the same part of a file, Git cannot automatically merge and shows a conflict.
 2. We edit the file to choose which changes to keep.
 3. After resolving, commit the merge to finalize it.
 ### 4. Working in Teams
-#### Use feature branches
-Each developer works on their own branch for a task or feature. Once done, they merge their branch into the main branch.
-
-#### Merge frequently
-To avoid conflicts keep merging changes from the main branch into your feature branch regularly.
-
-#### Pull Requests (PRs)
-Before merging into the main branch, the team can review the changes in a pull request to ensure everything looks good.
+- **Use Feature Branches :** Each developer works on their own branch for a task or feature. Once done they merge their branch into the **`main branch`**.
+- **Merge Frequently :** To avoid conflicts keep merging changes from the main branch into your **`feature branch`** regularly.
+- **Pull Requests (PRs) :** Before merging into the **`main branch`** the team can review the changes in a pull request to ensure everything looks good.
 ### 5. Best Practices
-#### Keep branches short
-Don't work on a feature branch for too long before merging it. Smaller, more frequent merges are easier to manage.
-#### Review code before merging
-Use pull requests to get feedback from the team before adding changes to the main branch.
-#### Handle conflicts early
-Resolve conflicts as soon as they come up so they don’t pile up.
+- **Keep Branches Short :** Don't work on a **`feature branch`** for too long before merging it. Smaller, more frequent merges are easier to manage.
+- **Review code before Merging :** Use pull requests to get feedback from the team before adding changes to the main branch.
+- **Handle Conflicts Early :** Resolve conflicts as soon as they come up so they don’t pile up.
