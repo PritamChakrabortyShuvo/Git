@@ -90,6 +90,7 @@ Committed files are those that have been saved to the Git repository. A commit i
 <div align="center">
     <img src="Diagrams/Add.png" alt="Project Logo" width=40%>
 </div>
+
 ### Key Concepts of `git add`
 1. Staging Changes
 2. Staging
@@ -98,7 +99,9 @@ Committed files are those that have been saved to the Git repository. A commit i
 ## Git Commit
 ### What is Commit?
 **Git commit** represents a **snapshot of the project at a specific point in time**. It stores changes made to the files in a repository and forms the backbone of Git's version control.
-
+<div align="center">
+    <img src="Diagrams/Commit.png" alt="Project Logo" width=40%>
+</div>
 A commit includes:
 - **Author information (name and email)**
 - **Commit message (a brief description of the changes)**
