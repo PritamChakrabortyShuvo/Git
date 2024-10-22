@@ -156,3 +156,23 @@ In certain situations (e.g., when your local branch is not in sync with the remo
     git push --force origin main
 ```
 **Note :** This overwrites the remote branch, potentially losing changes made by others.
+
+## Git Commands : Cloning
+The basic command for Git cloning is
+```bash
+    git clone <repository-url>
+```
+- **`repository-url` :** This is the **URL** of the **remote repository** you want to clone. It can be provided in either **`HTTPS`**, **`SSH`** or **GIT protocol formats**.
+
+**Example using `HTTPS`**
+```bash
+    git clone https://github.com/your-username/your-repo.git
+```
+**Example using `SSH`**
+```bash
+    git clone git@github.com:your-username/your-repo.git
+```
+If you want to clone a specific branch you can add the **`-b`** option followed by the branch name
+```bash
+    git clone -b branch-name https://github.com/your-username/your-repo.git
+```
