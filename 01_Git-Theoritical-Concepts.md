@@ -87,6 +87,9 @@ Committed files are those that have been saved to the Git repository. A commit i
 ## Git Add
 ### What is git add?
 **Git add** is a command **used to stage changes in Git** preparing them to be included in the **next commit**. It doesn’t actually commit the changes it simply **moves modified or new files from the working area to the staging area** (also known as the "index"). This step is crucial in Git’s workflow because only staged changes can be committed.
+<div align="center">
+    <img src="Diagrams/Add.png" alt="Project Logo" width=40%>
+</div>
 ### Key Concepts of `git add`
 1. Staging Changes
 2. Staging
