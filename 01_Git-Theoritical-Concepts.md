@@ -59,6 +59,10 @@ Common platforms for remote repositories include:
 - **GitLab :** Known for DevOps features and CI/CD integration.
 - **Bitbucket :** Often used for private and business projects.
 ## Understanding the Areas in Git
+<div align="center">
+    <img src="Diagrams/Areas-in-Git.png" alt="Project Logo" width=80%>
+</div>
+
 ### Working Area
 #### Definition
 The working area is the local directory where you create and modify files for your project. This area contains all the files and folders that you are currently working on.
@@ -80,10 +84,6 @@ Committed files are those that have been saved to the Git repository. A commit i
 - **Tracked Changes :** Once files are committed git tracks their changes allowing you to revisit the commit history at any time.
 - **Commit History :** Each commit is associated with a unique identifier (hash) and contains metadata, including the author, date & commit message. This history allows you to understand the evolution of your project.
 - **Revisions :** Committed files can be reverted, modified or compared with other commits using various Git commands. This feature is crucial for collaboration & maintaining the integrity of the project over time.
-<div align="center">
-    <img src="Diagrams/Areas-in-Git.png" alt="Project Logo" width=80%>
-</div>
-
 ## Git Add
 ### What is git add?
 **Git add** is a command **used to stage changes in Git** preparing them to be included in the **next commit**. It doesn’t actually commit the changes it simply **moves modified or new files from the working area to the staging area** (also known as the "index"). This step is crucial in Git’s workflow because only staged changes can be committed.
