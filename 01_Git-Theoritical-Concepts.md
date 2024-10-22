@@ -263,3 +263,13 @@ In Git and platforms like GitHub a **fork is a personal copy of someone else's r
 3. Create a New Branch for Changes
 4. Keep Your Fork Up to Date
 5. Submit a Pull Request When Ready
+
+## Git Rebase
+Git Rebase is a Git command that **changes the base of our feature branch** to the **latest commit** on the main branch & then re-applies the **commits from the feature branch on top of the new base**. This results in a **linear history** as it effectively **moves the feature branch to start from the latest commit of the main branch**, replaying all the feature branch's changes as if they were committed after the latest changes on the target branch.
+<div align="center">
+    <img src="Diagrams/Git-Rebase.png" alt="Project Logo" width=90%>
+</div>
+
+### Common Use Cases:
+1. **Linear History :** If we want to maintain a clean and linear project history without multiple merge commits rebasing is the better option.
+2. **Feature Branch :** When working on a feature branch and the main branch has moved ahead, rebasing your feature branch onto the updated main branch allows for a clean incorporation of changes without merge conflicts.
