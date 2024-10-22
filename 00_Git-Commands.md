@@ -221,3 +221,28 @@ This command moves the feature-branch on top of the latest commits from the main
 ```bash
     git rebase main
 ```
+## Git Command : Squash
+Squash Commits Using `git rebase -i`
+### Step 1. Start an Interactive Rebase
+To squash commits, we initiate an interactive rebase using the following command:
+```bash
+    git rebase -i HEAD~n
+```
+**Note :** Replace **`n`** with the number of recent commits you want to squash. For example, **`git rebase -i HEAD~3`** would open the **last 3 commits** in interactive mode.
+### Step 2. Mark Commits for Squashing
+Once you run the command, Git will open your editor with a list of commits like this
+```sql
+    pick abc123 First commit
+    pick def456 Second commit
+    pick ghi789 Third commit
+```
+**Note :** Change the word pick to **`squash`** (or just s) for the commits you want to squash into the previous one
+```sql
+    pick abc123 First commit
+    squash def456 Second commit
+    squah ghi789 Third commit
+```
+### Step 4. Edit the Commit Message
+After marking commits for squashing, Git will prompt you to edit the commit message. You can Combine all messages or use a single message to describe the squashed commit.
+### Step 5. Save and Finish
+Save and close the editor, and Git will squash the commits into one.
