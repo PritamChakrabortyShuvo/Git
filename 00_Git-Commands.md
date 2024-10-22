@@ -140,3 +140,19 @@ If you run into conflicts or decide not to complete the merge you can cancel it 
 ```bash
     git merge --abort
 ```
+## Git Commands : Push
+The following command pushes the changes in your current branch to the origin remote and the main branch
+```bash
+    git push origin main
+```
+When pushing to a remote for the first time
+```bash
+    git push -u origin main
+```
+The **`-u`** flag sets **`origin/main`** as the **upstream branch** for future pushes & pulls so you can just use **`git push`** in the future without specifying the **remote** & **branch**.
+
+In certain situations (e.g., when your local branch is not in sync with the remote, or you've rewritten history with **`git rebase`**), you might need to use **`--force`** :
+```bash
+    git push --force origin main
+```
+**Note :** This overwrites the remote branch, potentially losing changes made by others.
