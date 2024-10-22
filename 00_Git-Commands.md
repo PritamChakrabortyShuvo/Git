@@ -177,3 +177,29 @@ If you want to clone a specific branch you can add the **`-b`** option followed 
     git clone -b branch-name https://github.com/your-username/your-repo.git
 ```
 After cloning, the repository is downloaded to your local machine, and you can start working on it.
+
+## Git Command : Fetch
+Fetches all branches from the remote repository, without merging them into your local branches.
+```bash
+    git fetch
+```
+Specify a particular remote repository to fetch from
+```bash
+    git fetch <remote_name>
+```
+Fetch a Specific Branch
+```bash
+    git fetch origin <branch_name>
+```
+If you have multiple remotes, this fetches from all configured remotes
+```bash
+    git fetch --all
+```
+Shows what changes would be fetched from the remote without actually downloading them
+```bash
+    git fetch --dry-run
+```
+To check fetched updates for specific branch
+```bash
+    git log HEAD..origin/<branch-name>
+```
