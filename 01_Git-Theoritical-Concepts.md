@@ -273,3 +273,6 @@ Git Rebase is a Git command that **changes the base of our feature branch** to t
 ### Common Use Cases:
 1. **Linear History :** If we want to maintain a clean and linear project history without multiple merge commits rebasing is the better option.
 2. **Feature Branch :** When working on a feature branch and the main branch has moved ahead, rebasing your feature branch onto the updated main branch allows for a clean incorporation of changes without merge conflicts.
+### Rebase vs Merge:
+- **Merge :** Combines two branches preserving the commit history of both. Creates a new commit called a **merge commit**.This new commit merges the changes from two branches and preserves the history of both branches.
+- **Rebase :** Moves the entire branch to start from the tip of the main branch replaying all your changes as new commits on top of the other branch. Does not create a merge commit.The history becomes linear without any merge commits
