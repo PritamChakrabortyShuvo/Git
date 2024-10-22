@@ -216,3 +216,12 @@ You’re working on your local branch and want to check if there are updates on 
 - Run git fetch to download the latest updates from the remote.
 - Git stores these changes in a separate tracking branch (e.g., origin/main).
 - You can inspect the changes and decide whether to merge them into your branch.
+
+## Git Pull
+Pulling is essentially a combination of two operations: **fetching** and **merging**. When you use **`git pull`** Git **first fetches changes** from the **remote repository** & then **automatically merges them** into your current branch. This operation **modifies your working directory** if there are differences between your local branch and the remote branch.
+- **What it does?:** Downloads changes from the remote repository and merges them into your current branch.
+- **When to use? :** Use git pull when you’re ready to incorporate changes from the remote branch into your local branch.
+### Example Workflow
+- You’re working on the main branch & there are updates on the remote main branch.
+- Run **`git pull`** to **fetch** and **merge** the remote changes into your local branch.
+- If there are no conflicts the remote changes are automatically incorporated into your current branch. If there are conflicts you will need to resolve them manually.
