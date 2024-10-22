@@ -74,7 +74,7 @@ If we want to unstage a file (remove it from the staging area) without deleting 
 - After using **`git rm`** we must commit the changes to finalize the removal in the repository.
 - Be cautious when using **`git rm`** especially with the force option as it permanently deletes files from the working directory & may lead to data loss if not handled properly.
 
-## Git Commands : Branches
+## Git Command : Branches
 To create a new branch.
 ```bash
     git branch <branch_name>
@@ -117,7 +117,7 @@ To list all branches.
 ```bash
     git branch
 ```
-## Git Commands : Merging
+## Git Command : Merging
 ### Merging a Branch into the Current Branch
 1. First, switch to the branch you want to merge into (often the **`main branch`**)
 ```bash
@@ -140,7 +140,7 @@ If you run into conflicts or decide not to complete the merge you can cancel it 
 ```bash
     git merge --abort
 ```
-## Git Commands : Push
+## Git Command : Push
 The following command pushes the changes in your current branch to the origin remote and the main branch
 ```bash
     git push origin main
@@ -157,7 +157,7 @@ In certain situations (e.g., when your local branch is not in sync with the remo
 ```
 **Note :** This overwrites the remote branch, potentially losing changes made by others.
 
-## Git Commands : Cloning
+## Git Command : Cloning
 The basic command for Git cloning is
 ```bash
     git clone <repository-url>
