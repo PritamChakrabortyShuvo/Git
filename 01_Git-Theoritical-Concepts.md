@@ -198,7 +198,6 @@ Git cloning is the process of creating a **local copy** of a **remote repository
 **Forking vs Cloning :** If we want to contribute to a project we don’t own (especially in open-source), it’s **common to fork the repository** (create our own copy in GitHub) & then **clone that fork** to our **local machine**.
 
 ## Git Pull Request
-
 A **Git pull request** (often called a **pull request** or **PR**) is a feature used primarily in platforms like **GitHub**, **GitLab** & **Bitbucket** to facilitate code collaboration. A **pull request** allows a **contributor to propose changes they've made to a repository** & then **ask the repository maintainer** to **review** & **merge** **those changes** into the **main codebase**.
 
 ### Key Aspects of a `Pull Request`
@@ -230,6 +229,10 @@ You’re working on your local branch and want to check if there are updates on 
 
 ## Git Pull
 Pulling is essentially a combination of two operations: **fetching** and **merging**. When you use **`git pull`** Git **first fetches changes** from the **remote repository** & then **automatically merges them** into your current branch. This operation **modifies your working directory** if there are differences between your local branch and the remote branch.
+<div align="center">
+    <img src="Diagrams/Pull.png" alt="Project Logo" width=70%>
+</div>
+
 - **What it does?:** Downloads changes from the remote repository and merges them into your current branch.
 - **When to use? :** Use git pull when you’re ready to incorporate changes from the remote branch into your local branch.
 ### Example Workflow
