@@ -276,3 +276,33 @@ Git Rebase is a Git command that **changes the base of our feature branch** to t
 ### Rebase vs Merge:
 - **Merge :** Combines two branches preserving the commit history of both. Creates a new commit called a **merge commit**.This new commit merges the changes from two branches and preserves the history of both branches.
 - **Rebase :** Moves the entire branch to start from the tip of the main branch replaying all your changes as new commits on top of the other branch. Does not create a merge commit.The history becomes linear without any merge commits
+
+## Git Squash
+**Git Squash** refers to **combining multiple commits** into a **single commit**. This is often used to **clean up a branch’s commit history** before merging or rebasing, especially when many small commits can be consolidated into one meaningful commit.
+### When to Use Squash?
+- **Cleanup history :** If you've made many small or unnecessary commits squashing them makes your history cleaner and more readable.
+- **Before merging :** Squashing can be useful to present a feature or bugfix as a single concise commit when merging to main.
+### How to Squash Commits Using `git rebase -i`?
+#### Step 1. Start an Interactive Rebase
+To squash commits, we initiate an interactive rebase using the following command:
+```bash
+    git rebase -i HEAD~n
+```
+**Note :** Replace **`n`** with the number of recent commits you want to squash. For example, **`git rebase -i HEAD~3`** would open the **last 3 commits** in interactive mode.
+#### Step 2. Mark Commits for Squashing
+Once you run the command, Git will open your editor with a list of commits like this
+```sql
+    pick abc123 First commit
+    pick def456 Second commit
+    pick ghi789 Third commit
+```
+**Note :** Change the word pick to **`squash`** (or just s) for the commits you want to squash into the previous one
+```sql
+    pick abc123 First commit
+    squash def456 Second commit
+    squah ghi789 Third commit
+```
+#### Step 4. Edit the Commit Message
+After marking commits for squashing, Git will prompt you to edit the commit message. You can Combine all messages or use a single message to describe the squashed commit.
+#### Step 5. Save and Finish
+Save and close the editor, and Git will squash the commits into one.
