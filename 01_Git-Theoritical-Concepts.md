@@ -174,3 +174,14 @@ In Git, Push is used to **upload local repository content** to a **remote reposi
 ### Important Considerations
 - **Push vs. Pull :** **`git push`** uploads changes while **`git pull`** **fetches** & **merges** **changes from the remote repository** to your **local machine**.
 - **Permissions :** You need proper permissions (write access) to push to a remote repository especially when collaborating on shared repositories.
+
+## Git Cloning 
+Git cloning is the process of creating a **local copy** of a **remote repository** using the **`git clone`** command. This allows us to **download the full version history** & **all branches of a project** from a **remote repository** to our **local machine**. Once cloned, we can make changes, commit & push updates back to the remote repository.
+### Key Aspects of `git clone`
+- **Repository Copy :** Cloning pulls the entire repository including all commits, branches, tags & files. It’s a one-time operation to create the local copy.
+- **Linking to Remote :** When we clone a repository, Git automatically sets up a link to the remote repository (usually named origin). This allows us to pull updates and push changes in the future.
+### Common Scenarios
+- **Starting a Project :** Developers clone repositories to get a full copy of a project's history and files to begin working.
+- **Open-Source Contributions :** In open-source projects, we typically clone the project, create changes locally, and then push to a forked version or submit pull requests.
+### Important Considerations
+**Forking vs Cloning :** If we want to contribute to a project we don’t own (especially in open-source), it’s **common to fork the repository** (create our own copy in GitHub) & then **clone that fork** to our **local machine**.
