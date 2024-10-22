@@ -61,7 +61,7 @@ Common platforms for remote repositories include:
 ## Git Add
 ### What is git add?
 **Git add** is a command **used to stage changes in Git** preparing them to be included in the **next commit**. It doesn’t actually commit the changes it simply **moves modified or new files from the working area to the staging area** (also known as the "index"). This step is crucial in Git’s workflow because only staged changes can be committed.
-### Key Concepts of git add
+### Key Concepts of `git add`
 1. Staging Changes
 2. Staging
 3. Tracking New Files
@@ -162,3 +162,15 @@ Merging in Git combines the changes from one branch into another, often to incor
     <img src="Diagrams/Branching.png" alt="Project Logo" width=70%>
 </div>
 
+## Git Push
+In Git, Push is used to **upload local repository content** to a **remote repository**. Essentially, it **transfers committed changes** from your local repository to the remote making them available to others working on the project.
+### Key Aspects of `git push`
+- **Transfer Changes :** It moves your local commits (newly added or modified files) to a specified branch on the remote repository.
+- **Tracking Branches :** When you push, Git typically updates a "**tracking branch**", which represents the **state of the corresponding branch** in the remote repository. The **branch name in the remote** can be the same as the **local one** (commonly master or main) or different depending on how we configure it.
+### Common Scenarios
+- **Collaborating on Projects :** When working with a team you often push your changes to a shared repository so others can pull them & contribute.
+- **Feature Branches :** For larger projects developers often push specific features or fixes to separate branches.
+- **Continuous Integration (CI) :** Many projects trigger automatic builds or tests whenever code is pushed to specific branches.
+### Important Considerations
+- **Push vs. Pull :** **`git push`** uploads changes while **`git pull`** **fetches** & **merges** **changes from the remote repository** to your **local machine**.
+- **Permissions :** You need proper permissions (write access) to push to a remote repository especially when collaborating on shared repositories.
