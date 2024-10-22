@@ -236,3 +236,16 @@ A **merge conflict** occurs in Git when **two branches have made changes to the 
 1. **Step 1.** : Identify the Conflict
 2. **Step 2.** : Open the Conflicted Files
 3. **Step 3.** : Manually Resolve the Conflict. Edit the conflicted files to resolve the differences. You can keep one of the changes, combine them or create a new resolution altogether. Remove the conflict markers (***`<<<<<<<, =======, >>>>>>>`**) after making your changes.
+
+## Git Fork
+In Git and platforms like GitHub a **fork is a personal copy of someone else's repository**. It allows users to **freely experiment with changes** **without affecting the original project**. **Forking** is commonly used in **collaborative development** especially in **open-source projects** to propose changes or contribute to a project.
+### Key Features of a Fork
+- **Independent Repository :** A fork creates a separate copy of the repository under your account. You can make changes, commit them & push them without affecting the original repository.
+- **Pull Requests :** After making changes in a fork you can submit a pull request to the original repository, proposing that your changes be merged into the original project. This is a common way to contribute to open-source projects.
+- **Contributions :** Forking is essential for collaboration. It allows multiple users to work on a project simultaneously each making changes in their own fork.
+### Best Practice of Forking
+1. Fork Responsibly
+2. Clone Your Fork Locally
+3. Create a New Branch for Changes
+4. Keep Your Fork Up to Date
+5. Submit a Pull Request When Ready
