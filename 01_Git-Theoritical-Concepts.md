@@ -172,7 +172,7 @@ Merging in Git combines the changes from one branch into another, often to incor
 ## Git Push
 In Git, Push is used to **upload local repository content** to a **remote repository**. Essentially, it **transfers committed changes** from your local repository to the remote making them available to others working on the project.
 <div align="center">
-    <img src="Diagrams/Push.png" alt="Project Logo" width=70%>
+    <img src="Diagrams/Push.png" alt="Project Logo" width=50%>
 </div>
 
 ### Key Aspects of `git push`
@@ -230,7 +230,7 @@ You’re working on your local branch and want to check if there are updates on 
 ## Git Pull
 Pulling is essentially a combination of two operations: **fetching** and **merging**. When you use **`git pull`** Git **first fetches changes** from the **remote repository** & then **automatically merges them** into your current branch. This operation **modifies your working directory** if there are differences between your local branch and the remote branch.
 <div align="center">
-    <img src="Diagrams/Pull.png" alt="Project Logo" width=70%>
+    <img src="Diagrams/Pull.png" alt="Project Logo" width=50%>
 </div>
 
 - **What it does?:** Downloads changes from the remote repository and merges them into your current branch.
