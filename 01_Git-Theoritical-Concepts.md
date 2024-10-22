@@ -225,3 +225,14 @@ Pulling is essentially a combination of two operations: **fetching** and **mergi
 - You’re working on the main branch & there are updates on the remote main branch.
 - Run **`git pull`** to **fetch** and **merge** the remote changes into your local branch.
 - If there are no conflicts the remote changes are automatically incorporated into your current branch. If there are conflicts you will need to resolve them manually.
+
+## Git Merge Conflict
+A **merge conflict** occurs in Git when **two branches have made changes to the same line** of a file or when **one branch edits a file** while **another branch deletes it**. Git is unable to automatically resolve these differences during a merge, requiring manual intervention to resolve the conflict.
+### Common Causes of Merge Conflicts:
+- **Concurrent Edits :** Two branches modify the same line in a file differently.
+- **File Deletion :** One branch deletes a file while another branch modifies it.
+- **Changes to Overlapping Lines :** Changes made to adjacent lines that affect the same part of a file.
+### Steps to Resolve Merge Conflicts
+1. **Step 1.** : Identify the Conflict
+2. **Step 2.** : Open the Conflicted Files
+3. **Step 3.** : Manually Resolve the Conflict. Edit the conflicted files to resolve the differences. You can keep one of the changes, combine them or create a new resolution altogether. Remove the conflict markers (***`<<<<<<<, =======, >>>>>>>`**) after making your changes.
