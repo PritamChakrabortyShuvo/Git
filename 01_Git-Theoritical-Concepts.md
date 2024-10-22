@@ -58,6 +58,32 @@ Common platforms for remote repositories include:
 - **GitHub :** Popular for open-source projects.
 - **GitLab :** Known for DevOps features and CI/CD integration.
 - **Bitbucket :** Often used for private and business projects.
+## Understanding the Areas in Git
+### Working Area
+#### Definition
+The working area is the local directory where you create and modify files for your project. This area contains all the files and folders that you are currently working on.
+#### Characteristics
+- **Untracked Changes :** Any new files or changes made to existing files are considered untracked by Git until you explicitly stage them.
+- **Local Modifications :** You can freely edit files in this area without affecting the repository history. This is where you do all your development work.
+- **Visibility :** Files in the working area can be seen and modified using any text editor or Integrated Development Environment (IDE).
+### Staging Area
+#### Definition 
+The staging area (also known as the index) is an intermediate space where changes are prepared before being committed to the repository. It acts as a buffer between the working area and the committed state.
+#### Characteristics
+- **Marked for Inclusion :** When you add files to the staging area using the git add command, you mark them for inclusion in the next commit. This allows you to select which changes you want to commit.
+- **Snapshot of Changes :** The staging area holds a snapshot of the changes you have staged. This snapshot will be saved in the next commit allowing you to control what gets committed.
+- **Selective Committing :** You can stage individual files or specific changes within files, giving you fine-grained control over your commit history.
+### Committed Files
+#### Definition
+Committed files are those that have been saved to the Git repository. A commit is a snapshot of the project at a specific point in time.
+#### Characteristics
+- **Tracked Changes :** Once files are committed git tracks their changes allowing you to revisit the commit history at any time.
+- **Commit History :** Each commit is associated with a unique identifier (hash) and contains metadata, including the author, date & commit message. This history allows you to understand the evolution of your project.
+- **Revisions :** Committed files can be reverted, modified or compared with other commits using various Git commands. This feature is crucial for collaboration & maintaining the integrity of the project over time.
+<div align="center">
+    <img src="Diagrams/Areas-in-Git.png" alt="Project Logo" width=80%>
+</div>
+
 ## Git Add
 ### What is git add?
 **Git add** is a command **used to stage changes in Git** preparing them to be included in the **next commit**. It doesn’t actually commit the changes it simply **moves modified or new files from the working area to the staging area** (also known as the "index"). This step is crucial in Git’s workflow because only staged changes can be committed.
@@ -88,34 +114,6 @@ A commit includes:
 - **Updated Image :** Replaced an outdated diagram with a new one.
 - **Refined Content :** Improved the clarity or readability of text.
 - **Fixed Comments :** Improved explanations in code comments.
-## Understanding the Areas in Git
-### Working Area
-#### Definition
-The working area is the local directory where you create and modify files for your project. This area contains all the files and folders that you are currently working on.
-#### Characteristics
-- **Untracked Changes :** Any new files or changes made to existing files are considered untracked by Git until you explicitly stage them.
-- **Local Modifications :** You can freely edit files in this area without affecting the repository history. This is where you do all your development work.
-- **Visibility :** Files in the working area can be seen and modified using any text editor or Integrated Development Environment (IDE).
-
-### Staging Area
-#### Definition 
-The staging area (also known as the index) is an intermediate space where changes are prepared before being committed to the repository. It acts as a buffer between the working area and the committed state.
-#### Characteristics
-- **Marked for Inclusion :** When you add files to the staging area using the git add command, you mark them for inclusion in the next commit. This allows you to select which changes you want to commit.
-- **Snapshot of Changes :** The staging area holds a snapshot of the changes you have staged. This snapshot will be saved in the next commit allowing you to control what gets committed.
-- **Selective Committing :** You can stage individual files or specific changes within files, giving you fine-grained control over your commit history.
-
-### Committed Files
-#### Definition
-Committed files are those that have been saved to the Git repository. A commit is a snapshot of the project at a specific point in time.
-#### Characteristics
-- **Tracked Changes :** Once files are committed git tracks their changes allowing you to revisit the commit history at any time.
-- **Commit History :** Each commit is associated with a unique identifier (hash) and contains metadata, including the author, date & commit message. This history allows you to understand the evolution of your project.
-- **Revisions :** Committed files can be reverted, modified or compared with other commits using various Git commands. This feature is crucial for collaboration & maintaining the integrity of the project over time.
-<div align="center">
-    <img src="Diagrams/Areas-in-Git.png" alt="Project Logo" width=80%>
-</div>
-
 ## Git Branches
 Git **branches** are an essential feature of version control that **allow us to work on different versions of a project simultaneously**. Branches enable **isolated development** meaning we can work on **new features**, **bug fixes** or **experiments** without **affecting the main codebase**. Here’s how Git branches work:
 ### 1. Main Branch (Master/Main)
