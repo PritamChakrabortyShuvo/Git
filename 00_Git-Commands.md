@@ -212,3 +212,12 @@ To pull changes from the **`main branch`** of the remote repository
 ```bash
     git pull <repository_name> <branch_name>
 ```
+## Git Command : Rebase
+Rebase your current branch onto another branch
+```bash
+    git checkout feature-branch
+```
+This command moves the feature-branch on top of the latest commits from the main branch and re-applies your changes.
+```bash
+    git rebase main
+```
