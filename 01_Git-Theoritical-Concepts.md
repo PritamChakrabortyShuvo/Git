@@ -286,3 +286,9 @@ Git Rebase is a Git command that **changes the base of our feature branch** to t
 ### When to Use Squash?
 - **Cleanup history :** If you've made many small or unnecessary commits squashing them makes your history cleaner and more readable.
 - **Before merging :** Squashing can be useful to present a feature or bugfix as a single concise commit when merging to main.
+
+## Git Cherry Pick
+Cherry Pick allow us to apply a **specific commit** (or multiple commits) from **one branch to another**. Instead of **merging an entire branch** **`git cherry-pick`** lets us select **individual commits** & **apply them elsewhere** giving us more control over which changes are brought into the **`main branch`**.
+### Key Concepts of git cherry-pick
+- **Selective Commit Transfer :** We can pick specific commits from one branch and apply them to another without merging the entire branch.
+- **Maintains History :** The commit's changes and metadata are preserved but it creates a new commit with a different hash on the target branch.
