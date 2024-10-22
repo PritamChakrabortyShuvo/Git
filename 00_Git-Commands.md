@@ -176,4 +176,4 @@ If you want to clone a specific branch you can add the **`-b`** option followed 
 ```bash
     git clone -b branch-name https://github.com/your-username/your-repo.git
 ```
-After cloning, the repository is downloaded to your local machine, and you can start working on it
+After cloning, the repository is downloaded to your local machine, and you can start working on it.
