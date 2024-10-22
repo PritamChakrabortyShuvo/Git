@@ -102,6 +102,7 @@ Committed files are those that have been saved to the Git repository. A commit i
 <div align="center">
     <img src="Diagrams/Commit.png" alt="Project Logo" width=40%>
 </div>
+
 A commit includes:
 - **Author information (name and email)**
 - **Commit message (a brief description of the changes)**
@@ -121,7 +122,12 @@ A commit includes:
 - **Refined Content :** Improved the clarity or readability of text.
 - **Fixed Comments :** Improved explanations in code comments.
 ## Git Branches
-Git **branches** are an essential feature of version control that **allow us to work on different versions of a project simultaneously**. Branches enable **isolated development** meaning we can work on **new features**, **bug fixes** or **experiments** without **affecting the main codebase**. Here’s how Git branches work:
+Git **branches** are an essential feature of version control that **allow us to work on different versions of a project simultaneously**. Branches enable **isolated development** meaning we can work on **new features**, **bug fixes** or **experiments** without **affecting the main codebase**. 
+<div align="center">
+    <img src="Diagrams/Branching.png" alt="Project Logo" width=70%>
+</div>
+
+Here’s how Git branches work:
 ### 1. Main Branch (Master/Main)
 - The main branch is typically where the stable version of the code resides. It’s the default branch when a repository is initialized & it’s often called main (formerly master).
 - It holds production-ready code & all features or changes eventually get merged back into this branch.
@@ -162,12 +168,13 @@ Merging in Git combines the changes from one branch into another, often to incor
 - **Keep Branches Short :** Don't work on a **`feature branch`** for too long before merging it. Smaller, more frequent merges are easier to manage.
 - **Review code before Merging :** Use pull requests to get feedback from the team before adding changes to the main branch.
 - **Handle Conflicts Early :** Resolve conflicts as soon as they come up so they don’t pile up.
-<div align="center">
-    <img src="Diagrams/Branching.png" alt="Project Logo" width=70%>
-</div>
 
 ## Git Push
 In Git, Push is used to **upload local repository content** to a **remote repository**. Essentially, it **transfers committed changes** from your local repository to the remote making them available to others working on the project.
+<div align="center">
+    <img src="Diagrams/Push.png" alt="Project Logo" width=70%>
+</div>
+
 ### Key Aspects of `git push`
 - **Transfer Changes :** It moves your local commits (newly added or modified files) to a specified branch on the remote repository.
 - **Tracking Branches :** When you push, Git typically updates a "**tracking branch**", which represents the **state of the corresponding branch** in the remote repository. The **branch name in the remote** can be the same as the **local one** (commonly master or main) or different depending on how we configure it.
