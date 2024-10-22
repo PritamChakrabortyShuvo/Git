@@ -246,3 +246,16 @@ Once you run the command, Git will open your editor with a list of commits like 
 After marking commits for squashing, Git will prompt you to edit the commit message. You can Combine all messages or use a single message to describe the squashed commit.
 ### Step 5. Save and Finish
 Save and close the editor, and Git will squash the commits into one.
+
+## Git Command : Cherry Pick
+To apply the changes of a specific commit from another branch to the current branch
+```bash
+    git cherry-pick <commit-hash>
+```
+**Note :** Replace **`<commit-hash>`** with the hash of the commit you want to pick.
+
+To apply multiple specific commits
+```bash
+    git cherry-pick <commit-hash1> <commit-hash2>
+```
+List the commit hashes you want to apply, separated by spaces
