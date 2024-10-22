@@ -203,3 +203,12 @@ To check fetched updates for specific branch
 ```bash
     git log HEAD..origin/<branch-name>
 ```
+## Git Command : Pull
+If you're working on the main branch
+```bash
+    git pull
+```
+To pull changes from the **`main branch`** of the remote repository 
+```bash
+    git pull <repository_name> <branch_name>
+```
