@@ -1,4 +1,4 @@
-# Process of Initializing a Empty Git Repository from Local to Remote
+# Process of Initializing a Empty Local Repository
 ## Step 1. Create a Directory
 Create a empty Directory named "My-First-Repository"
 ## Step 3. Initialize the Git Repository
