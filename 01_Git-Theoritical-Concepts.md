@@ -60,7 +60,7 @@ Common platforms for remote repositories include:
 - **Bitbucket :** Often used for private and business projects.
 ## Understanding the Areas in Git
 <div align="center">
-    <img src="Diagrams/Areas-in-Git.png" alt="Project Logo" width=80%>
+    <img src="Diagrams/Areas-in-Git.png" alt="Project Logo" width=90%>
 </div>
 
 ### Working Area
