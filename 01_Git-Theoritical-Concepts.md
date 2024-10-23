@@ -293,7 +293,7 @@ Cherry Pick allow us to apply a **specific commit** (or multiple commits) from *
     <img src="Diagrams/Cherry-Pick.png" alt="Project Logo" width=90%>
 </div>
 
-### Key Concepts of git Cherry-pick
+### Key Concepts of Git Cherry-Pick
 - **Selective Commit Transfer :** We can pick specific commits from one branch and apply them to another without merging the entire branch.
 - **Maintains History :** The commit's changes and metadata are preserved but it creates a new commit with a different hash on the target branch.
 
