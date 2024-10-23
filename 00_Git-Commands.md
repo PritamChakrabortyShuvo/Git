@@ -224,6 +224,7 @@ This command moves the feature-branch on top of the latest commits from the main
 To Restores branch to the exact state it was in before the rebase began.
 ```bash
     git rebase --abort
+```
 ## Git Command : Squash
 Squash Commits Using `git rebase -i`
 ### Step 1. Start an Interactive Rebase
@@ -267,7 +268,7 @@ Moves the branch pointer to the specified commit but keeps all changes staged.
 ```bash
     git reset --soft <commit-hash>
 ```
-Moves the branch pointer to the specified commit, unstages all changes, but keeps them in the working directory.
+Moves the branch pointer to the specified commit, unstages all changes but keeps them in the working directory.
 ```bash
     git reset <commit-hash>
 ```
@@ -275,7 +276,30 @@ Moves the branch pointer to the specified commit and discards all changes in bot
 ```bash
     git reset --hard <commit-hash>
 ```
-Resets to the latest commit, unstaging any changes but keeping them in the working directory.
+Resets to the latest commit unstaging any changes but keeping them in the working directory.
 ```bash
     git reset HEAD
+```
+## Git Command : Reflog
+This shows a list of recent changes to HEAD.
+```bash
+    git reflog
+```
+### Step 1. Commit a change
+```bash
+    git commit -m "Added a new feature"
+```
+### Step 2. Accidentally reset hard to a previous commit.
+```bash
+    git reset --hard HEAD~1
+```
+Now the latest commit is gone from the history.
+### Step 3. Use reflog to find the lost commit
+This shows a list of recent changes to HEAD. Find the hash of the commit you lost.
+```bash
+    git reflog
+```
+### Step 4. Recover the commit
+```bash
+    git reset --hard <commit-hash>
 ```
