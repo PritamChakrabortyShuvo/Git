@@ -258,4 +258,21 @@ To apply multiple specific commits
 ```bash
     git cherry-pick <commit-hash1> <commit-hash2>
 ```
-List the commit hashes you want to apply, separated by spaces
+List the commit hashes you want to apply, separated by spaces.
+## Git Command : Reset 
+Moves the branch pointer to the specified commit but keeps all changes staged.
+```bash
+    git reset --soft <commit-hash>
+```
+Moves the branch pointer to the specified commit, unstages all changes, but keeps them in the working directory.
+```bash
+    git reset <commit-hash>
+```
+Moves the branch pointer to the specified commit and discards all changes in both the staging area and the working directory.
+```bash
+    git reset --hard <commit-hash>
+```
+Resets to the latest commit, unstaging any changes but keeping them in the working directory.
+```bash
+    git reset HEAD
+```
