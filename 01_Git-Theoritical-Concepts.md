@@ -292,3 +292,20 @@ Cherry Pick allow us to apply a **specific commit** (or multiple commits) from *
 ### Key Concepts of git cherry-pick
 - **Selective Commit Transfer :** We can pick specific commits from one branch and apply them to another without merging the entire branch.
 - **Maintains History :** The commit's changes and metadata are preserved but it creates a new commit with a different hash on the target branch.
+
+## Git Reset
+Git resetting is a way to undo changes in your repository. It allows us to move the current branch pointer to a specific commit, effectively altering the commit history or the state of our working directory.
+### Types of Git Reset
+Here are the main types of Git reset & how they work.
+#### 1. Soft Reset (`--soft`)
+- Moves to a specific commit but keeps all changes staged.
+- **Use :** When you want to undo commits but keep the changes for later.
+#### 2. Mixed Reset (`--mixed`) (Default)
+- Moves to a specific commit and unstages the changes but keeps them in your working directory.
+- **Use :** When you want to undo commits and unstage changes.
+#### 3. Hard Reset (`--hard`)
+- Moves to a specific commit and discards all changes in both the staging area and working directory.
+- **Use :** When you want to completely remove changes and go back to a clean state.
+### Best Practices
+- **Use with caution :** Especially with **`--hard`** as it permanently deletes changes. Always double-check if we need to keep any changes.
+- **Backup important changes :** Before resetting we can create a temporary branch to save our current work.
