@@ -314,3 +314,9 @@ The **Git Stash** **temporarily saves changes** in your **working directory** wi
 ### When to Use Git Stash?
 - Imagine we’re working on a feature but suddenly need to switch to another branch to fix a bug or handle something urgent.
 - We **don’t want to commit** our **unfinished work** yet but we also **don’t want to lose our progress**. This is where git stash comes in.
+## Git Reflog
+**Git Reflog** helps us **track all changes** made to the branches in our local repository. It **keeps a history** of where the branch pointers (like HEAD or any branch) have moved including operations like **resets**, **rebases**, **checkouts**, **merges** & **commits** even if those operations are undone later. Reflog is particularly useful when we want to recover commits or undo changes that seem lost like when we accidentally **reset**, **amend** or **delete a branch**.
+### Key Points about Reflog:
+- **Local Only :** Reflog is local to your repository and is not shared when pushing to a remote repository.
+- **Garbage Collection :** Git may eventually clean up old reflog entries after a certain time, but they typically last for at least 30 days.
+- **Rescue Tool :** Reflog is like a safety net when things go wrong, especially if we’ve lost track of a commit or performed a destructive action like a hard reset.
