@@ -221,6 +221,9 @@ This command moves the feature-branch on top of the latest commits from the main
 ```bash
     git rebase main
 ```
+To Restores branch to the exact state it was in before the rebase began.
+```bash
+    git rebase --abort
 ## Git Command : Squash
 Squash Commits Using `git rebase -i`
 ### Step 1. Start an Interactive Rebase
