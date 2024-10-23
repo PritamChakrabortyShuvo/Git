@@ -309,3 +309,8 @@ Here are the main types of Git reset & how they work.
 ### Best Practices
 - **Use with caution :** Especially with **`--hard`** as it permanently deletes changes. Always double-check if we need to keep any changes.
 - **Backup important changes :** Before resetting we can create a temporary branch to save our current work.
+## Git Stash
+The **Git Stash** **temporarily saves changes** in your **working directory** without **committing them** allowing you to **switch branches or work on something else** without **losing your progress**. You can apply the stashed changes later when you're ready.
+### When to Use Git Stash?
+- Imagine we’re working on a feature but suddenly need to switch to another branch to fix a bug or handle something urgent.
+- We **don’t want to commit** our **unfinished work** yet but we also **don’t want to lose our progress**. This is where git stash comes in.
