@@ -30,6 +30,8 @@ Modifies the last commit by adding any staged changes and replacing the commit m
 ```bash
     git commit --amend -m "Updated commit message"
 ```
+**Note :** *We must **force push** it after **amending** by **`git push --force origin main`**.*
+
 Used to display the commit history of a Git repository.
 ```bash
     git log
