@@ -324,3 +324,19 @@ The **Git Stash** **temporarily saves changes** in your **working directory** wi
 - **Local Only :** Reflog is local to your repository and is not shared when pushing to a remote repository.
 - **Garbage Collection :** Git may eventually clean up old reflog entries after a certain time, but they typically last for at least 30 days.
 - **Rescue Tool :** Reflog is like a safety net when things go wrong, especially if we’ve lost track of a commit or performed a destructive action like a hard reset.
+
+## Git Command Types
+In Git, commands are divided into two categories
+1. Porcelain Commands 
+2. Plumbing Commands
+### Porcelain Commands
+These are high-level, user-friendly commands meant for everyday use. They abstract the inner workings of Git. Examples include
+- **`git add`**
+- **`git commit`**
+- **`git push`**
+- **`git checkout`**
+### Plumbing Commands
+These are low-level commands that deal with Git’s internals. They're meant for more advanced users or scripts. Examples include:
+- **`git hash-object`**
+- **`git cat-file`**
+- **`git update-ref`**
