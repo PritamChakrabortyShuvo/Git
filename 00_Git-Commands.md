@@ -303,3 +303,20 @@ This shows a list of recent changes to HEAD. Find the hash of the commit you los
 ```bash
     git reset --hard <commit-hash>
 ```
+## Example Git Flow
+### 1. Creating a Blob
+- When you add a file like **`file.txt`** Git calculates its **SHA-1 hash** & stores it in **`.git/objects`**.
+- Using **`git hash-object -w file.txt`**, Git writes the file's content as a blob object.
+### 2. Storing in `.git/objects`
+- Let's say the **SHA-1 hash** of **`file.txt`** is **`bea8d7fee8e7b11c2235ca623935e6ccccd8bac3`**. Git will store this in **`.git/objects/be/a8d7...`**, where **be** is the first two characters and **a8d7**... is the rest of the hViewing the Blobash.
+### 3. Viewing the Blob
+We can view the contents of the blob using
+```bash
+    git cat-file -p bea8d7
+```
+This will show 
+```bash
+    "This is my first story"
+```
+### 4. Looking at Other Objects:
+We can also inspect other objects, like commits or trees, using **`git cat-file -p <hash>`**.
