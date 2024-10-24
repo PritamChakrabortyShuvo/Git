@@ -340,3 +340,16 @@ These are low-level commands that deal with Git’s internals. They're meant for
 - **`git hash-object`**
 - **`git cat-file`**
 - **`git update-ref`**
+
+## Git Objects 
+Git stores everything (commits, trees, blobs, etc.) **as objects** in the **`.git/objects`** directory. These objects are identified by their **SHA-1** hashes.
+
+- **Blob :** This is the **content of a file**. The **file's data** is stored as a **blob object**.
+- **Tree :** This **represents a directory** storing pointers to blobs (files) and other trees (subdirectories).
+- **Commit :** A commit **object points to a tree object** representing the state of the repository at the time of the commit.
+### Explaining the `.git/objects` Directory
+The **`.git/objects`** directory stores **Git's internal objects** such as **blobs**, **trees**, **commits** & **tags** as **SHA-1 hashes**.
+- A path like **`./.git/objects/26/bea0`** represents a file in the **`.git/objects`** directory.
+  - Here, **26** is the first two characters of the **SHA-1** hash.
+  - **bea0** represents the rest of the hash shortened for readability.
+So, if we run **`git hash-object`** on **`file.txt`** it might create a file in the **`.git/objects/26/bea0`** directory.
