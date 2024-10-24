@@ -276,7 +276,6 @@ Git Rebase is a Git command that **changes the base of our feature branch** to t
 ### Rebase vs Merge:
 - **Merge :** Combines two branches preserving the commit history of both. Creates a new commit called a **merge commit**.This new commit merges the changes from two branches and preserves the history of both branches.
 - **Rebase :** Moves the entire branch to start from the tip of the main branch replaying all your changes as new commits on top of the other branch. Does not create a merge commit.The history becomes linear without any merge commits
-
 ## Git Squash
 **Git Squash** refers to **combining multiple commits** into a **single commit**. This is often used to **clean up a branch’s commit history** before merging or rebasing, especially when many small commits can be consolidated into one meaningful commit.
 <div align="center">
@@ -286,7 +285,6 @@ Git Rebase is a Git command that **changes the base of our feature branch** to t
 ### When to Use Squash?
 - **Cleanup history :** If you've made many small or unnecessary commits squashing them makes your history cleaner and more readable.
 - **Before merging :** Squashing can be useful to present a feature or bugfix as a single concise commit when merging to main.
-
 ## Git Cherry Pick
 Cherry Pick allow us to apply a **specific commit** (or multiple commits) from **one branch to another**. Instead of **merging an entire branch** **`git cherry-pick`** lets us select **individual commits** & **apply them elsewhere** giving us more control over which changes are brought into the **`main branch`**.
 <div align="center">
@@ -296,7 +294,6 @@ Cherry Pick allow us to apply a **specific commit** (or multiple commits) from *
 ### Key Concepts of Git Cherry-Pick
 - **Selective Commit Transfer :** We can pick specific commits from one branch and apply them to another without merging the entire branch.
 - **Maintains History :** The commit's changes and metadata are preserved but it creates a new commit with a different hash on the target branch.
-
 ## Git Reset
 Git resetting is a way to undo changes in your repository. It allows us to move the current branch pointer to a specific commit, effectively altering the commit history or the state of our working directory.
 ### Types of Git Reset
@@ -313,6 +310,14 @@ Here are the main types of Git reset & how they work.
 ### Best Practices
 - **Use with caution :** Especially with **`--hard`** as it permanently deletes changes. Always double-check if we need to keep any changes.
 - **Backup important changes :** Before resetting we can create a temporary branch to save our current work.
+## Git Revert
+The **Git Revert** is used to **undo** a **specific commit** by **creating a new commit** that reverses the changes introduced by the **target commit**. Unlike git reset which **rewinds the branch history**, **git revert preserves the history by making a new commit**.
+### How git revert Works?
+- It creates a new commit that undoes the changes of a previous commit.
+- It leaves the history intact keeping the original commit in the log but showing that its effects have been negated.
+### When to Use git revert?
+- **Undo a specific commit :** If you made a mistake in a previous commit but don’t want to lose any history or affect other changes git revert is a safe option.
+- **Collaboration :** When working with others **it’s better to use git revert rather than git reset** because **git revert doesn’t rewrite commit history**. This ensures everyone’s history stays consistent.
 ## Git Stash
 The **Git Stash** **temporarily saves changes** in your **working directory** without **committing them** allowing you to **switch branches or work on something else** without **losing your progress**. You can apply the stashed changes later when you're ready.
 ### When to Use Git Stash?
@@ -324,7 +329,6 @@ The **Git Stash** **temporarily saves changes** in your **working directory** wi
 - **Local Only :** Reflog is local to your repository and is not shared when pushing to a remote repository.
 - **Garbage Collection :** Git may eventually clean up old reflog entries after a certain time, but they typically last for at least 30 days.
 - **Rescue Tool :** Reflog is like a safety net when things go wrong, especially if we’ve lost track of a commit or performed a destructive action like a hard reset.
-
 ## Git Command Types
 In Git, commands are divided into two categories
 1. Porcelain Commands 
