@@ -280,6 +280,39 @@ Resets to the latest commit unstaging any changes but keeping them in the workin
 ```bash
     git reset HEAD
 ```
+## Git Command : Revert
+This command will create a new commit that undoes the changes made by **`<commit-hash>`**.
+```bash
+    git revert <commit-hash>
+```
+Git will also prompt for a commit message, explaining that this new commit is a **"revert."**
+### Revert Command Example 
+Check your commit history
+```bash
+    git log --oneline
+```
+Output might look like this
+```bash
+    3f3bcae (HEAD -> main) Added new feature
+    2d8c6a5 Fixed a bug in login
+    1a2b3c4 Initial commit
+```
+Revert the second commit `(2d8c6a5)`. This creates a new commit that undoes the changes introduced by **`2d8c6a5`**.
+```bash
+    git revert 2d8c6a5
+```
+Commit log after revert
+```bash
+    git log --oneline
+```
+Now it might look like this
+```bash
+    a1b2c3d Revert "Fixed a bug in login"
+    3f3bcae Added new feature
+    2d8c6a5 Fixed a bug in login
+    1a2b3c4 Initial commit
+```
+The original **"`Fixed a bug in login`"** commit is still in the history but the changes it introduced have been undone by the new "Revert" commit.
 ## Git Command : Reflog
 This shows a list of recent changes to HEAD.
 ```bash
