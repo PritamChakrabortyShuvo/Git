@@ -13,9 +13,15 @@ Commit the changes
 ```bash
     git commit -m "Initial commit"
 ```
-## Step 3. Create a Remote Repository
+## Step 3. Renamed the Branch name to `main`
+The command is used to **rename** the **current branch** to **main**. The **`-M`** flag makes sure the branch is renamed forcefully even if a branch with the name **main** already exists.
+```bash
+    git branch -M main
+```
+**Note :** This is the **new name** for the **current branch**. It’s common for users to **rename** the **default branch** from **`master`** to **`main`** which has become a widely adopted standard in recent years.
+## Step 4. Create a Remote Repository
 Go to a Git hosting platform. Create a new repository, give it a name & copy the repository URL (usually in HTTPS or SSH format).
-## Step 4. Link the Local Repository to the Remote
+## Step 5. Link the Local Repository to the Remote
 Add the remote URL to your local repository
 ```bash
     git remote add origin https://github.com/your-username/your-repo-name.git
@@ -24,9 +30,9 @@ Verify the remote
 ```bash
     git remote -v
 ```
-## Step 5. Push the Local Repository to the Remote
+## Step 6. Push the Local Repository to the Remote
 Push the initial commit to the remote repository
 ```bash
-    git push -u origin master
+    git push -u origin main
 ```
 Now, the local repository is synced with the remote repository & we can push or pull changes as needed.
