@@ -20,6 +20,7 @@ Discards changes in the specified file in the working directory restoring it to 
 ```bash
     git restore filename
 ```
+---
 ## Git Commands : Commit Management and Log Viewing
 Creates a new commit with the changes that have been staged, using the provided commit message.
 ```bash
@@ -53,6 +54,7 @@ Shows the current status of the working directory and staging area, indicating w
 ```bash
     git status
 ```
+---
 ## Git Command : Removing Files from Working and Staging Areas
 To delete a specific file from both the working directory and the repository run
 ```bash
@@ -73,7 +75,7 @@ If we want to unstage a file (remove it from the staging area) without deleting 
 ### Important Considerations:
 - After using **`git rm`** we must commit the changes to finalize the removal in the repository.
 - Be cautious when using **`git rm`** especially with the force option as it permanently deletes files from the working directory & may lead to data loss if not handled properly.
-
+---
 ## Git Command : Branches
 To create a new branch.
 ```bash
@@ -117,6 +119,7 @@ To list all branches.
 ```bash
     git branch
 ```
+---
 ## Git Command : Merging
 ### Merging a Branch into the Current Branch
 1. First, switch to the branch you want to merge into (often the **`main branch`**)
@@ -140,6 +143,7 @@ If you run into conflicts or decide not to complete the merge you can cancel it 
 ```bash
     git merge --abort
 ```
+---
 ## Git Command : Push
 The following command pushes the changes in your current branch to the origin remote and the main branch
 ```bash
@@ -157,6 +161,7 @@ In certain situations (e.g., when your local branch is not in sync with the remo
 ```
 **Note :** This overwrites the remote branch, potentially losing changes made by others.
 
+---
 ## Git Command : Cloning
 The basic command for Git cloning is
 ```bash
@@ -178,6 +183,7 @@ If you want to clone a specific branch you can add the **`-b`** option followed 
 ```
 After cloning, the repository is downloaded to your local machine, and you can start working on it.
 
+---
 ## Git Command : Fetch
 Fetches all branches from the remote repository, without merging them into your local branches.
 ```bash
@@ -203,6 +209,7 @@ To check fetched updates for specific branch
 ```bash
     git log HEAD..origin/<branch-name>
 ```
+---
 ## Git Command : Pull
 If you're working on the main branch
 ```bash
@@ -212,6 +219,7 @@ To pull changes from the **`main branch`** of the remote repository
 ```bash
     git pull <repository_name> <branch_name>
 ```
+---
 ## Git Command : Rebase
 Rebase your current branch onto another branch
 ```bash
@@ -225,6 +233,7 @@ To Restores branch to the exact state it was in before the rebase began.
 ```bash
     git rebase --abort
 ```
+---
 ## Git Command : Squash
 Squash Commits Using `git rebase -i`
 ### Step 1. Start an Interactive Rebase
@@ -251,6 +260,7 @@ After marking commits for squashing, Git will prompt you to edit the commit mess
 ### Step 5. Save and Finish
 Save and close the editor, and Git will squash the commits into one.
 
+---
 ## Git Command : Cherry Pick
 To apply the changes of a specific commit from another branch to the current branch
 ```bash
@@ -263,6 +273,8 @@ To apply multiple specific commits
     git cherry-pick <commit-hash1> <commit-hash2>
 ```
 List the commit hashes you want to apply, separated by spaces.
+
+---
 ## Git Command : Reset 
 Moves the branch pointer to the specified commit but keeps all changes staged.
 ```bash
@@ -280,6 +292,7 @@ Resets to the latest commit unstaging any changes but keeping them in the workin
 ```bash
     git reset HEAD
 ```
+---
 ## Git Command : Revert
 This command will create a new commit that undoes the changes made by **`<commit-hash>`**.
 ```bash
@@ -313,6 +326,8 @@ Now it might look like this
     1a2b3c4 Initial commit
 ```
 The original **"`Fixed a bug in login`"** commit is still in the history but the changes it introduced have been undone by the new "Revert" commit.
+
+---
 ## Git Command : Reflog
 This shows a list of recent changes to HEAD.
 ```bash
@@ -336,6 +351,7 @@ This shows a list of recent changes to HEAD. Find the hash of the commit you los
 ```bash
     git reset --hard <commit-hash>
 ```
+---
 ## Example of Git Flow
 ### 1. Creating a Blob
 - When you add a file like **`file.txt`** Git calculates its **SHA-1 hash** & stores it in **`.git/objects`**.
