@@ -221,6 +221,10 @@ A **Git pull request** (often called a **pull request** or **PR**) is a feature 
 **Fetching** is the process of **downloading changes from a remote repository** without **merging them into your local branch**. This allows you to **see what updates are available on the remote** without **affecting your local repository**.
 - **What it does? :** Downloads changes (commits, branches, tags) from the remote repository but does not modify your working files or the current branch.
 - **When to use? :** Use **`git fetch`** when you want to **see the changes made in the remote repository** & decide later if you want to merge them into your local branch.
+<div align="center">
+    <img src="Diagrams/Git-Fetch.png" alt="Project Logo" width=70%>
+</div>
+
 ### Example Workflow
 You’re working on your local branch and want to check if there are updates on the remote repository.
 - Run git fetch to download the latest updates from the remote.
