@@ -40,26 +40,26 @@ This is a repository stored on our **local machine** where **we can work indepen
 1. **Working Area**
 This is the directory **where we actively make changes to files**. Any **edits**, **additions** or **deletions** happen here but they are **not yet tracked** by **Git** until **we stage them**.
 2. **Staging Area (also known as the Index)**
-The staging area is a **holding space** between the **working area & the repository**. When we decide to track certain changes **we add them to the staging area** with **`git add`**. It holds a snapshot of what will be included in the next commit.
+The staging area is a **holding space** between the **working area & the repository**. When we decide to track certain changes **we add them to the staging area** with **`git add`**. It **holds a snapshot** of what will be included in the next commit.
 3. **Commit**
-Once changes are staged, we can create a commit using **`git commit`** which **saves the staged changes** to the local repository. Each commit is a snapshot of the project's state at that point in time allowing us to go back in time if needed.
+Once changes are staged, we can create a commit using **`git commit`** which **saves the staged changes** to the local repository. Each **commit is a snapshot of the project's state at that point in time** allowing us to **go back in time** if needed.
 
 These three areas form the basic workflow in Git ensuring changes are carefully managed before being permanently recorded in the repository.
 ### 2. Remote Repository
 A **remote repository is hosted on a server** & is typically used to **share code among team members** or **backup the project**. Multiple developers can collaborate by pushing their changes to and pulling updates from the remote repository. 
 
-Features of Remote Repository :
+#### Features of Remote Repository :
 - **Collaboration :** It enables teams to collaborate on code & track changes.
 - **Backup :** It acts as a backup of your project stored in a remote location.
 - **Synchronization :** Changes made locally can be pushed to the remote repository & updates from others can be pulled to keep the codebase in sync.
 
-Common platforms for remote repositories include:
-- **GitHub :** Popular for open-source projects.
-- **GitLab :** Known for DevOps features and CI/CD integration.
-- **Bitbucket :** Often used for private and business projects.
+Common platforms for remote repositories include :
+- **GitHub :** Popular for **Open-Source Projects**.
+- **GitLab :** Known for **DevOps features** & **CI/CD integration**.
+- **Bitbucket :** Often used for **Private & Business** projects.
 ## Understanding the Areas in Git
 <div align="center">
-    <img src="Diagrams/Areas-in-Git.png" alt="Project Logo" width=90%>
+    <img src="Diagrams/Areas-in-Git.png" alt="Project Logo" width=80%>
 </div>
 
 ### Working Area
