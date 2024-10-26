@@ -196,16 +196,19 @@ Git cloning is the process of creating a **local copy** of a **remote repository
 
 ## Git Pull Request
 A **Git pull request** (often called a **pull request** or **PR**) is a feature used primarily in platforms like **GitHub**, **GitLab** & **Bitbucket** to facilitate code collaboration. A **pull request** allows a **contributor to propose changes they've made to a repository** & then **ask the repository maintainer** to **review** & **merge** **those changes** into the **main codebase**.
+<div align="center">
+    <img src="Diagrams/Pull-Request.png" alt="Project Logo" width=90%>
+</div>
 
 ### Key Aspects of a `Pull Request`
 - **Proposing Changes :** A pull request is created after **you make changes to a branch** in a repository. You can use a **pull request** to let others know about the updates you want to merge.
-- **Branch-Based :** Pull requests are made between branches. For example, if you have a feature branch with new functionality you can create a pull request to merge it into the main or master branch.
-- **Code Review :** Maintainers or collaborators review the changes, comment, suggest improvements or approve the PR. If everything looks good they merge the changes into the main branch.
+- **Branch-Based :** Pull Requests are made between branches. For example, if you have a **feature branch** with **new functionality*** you can **create a pull request to merge it into the main or master branch**.
+- **Code Review :** **Maintainers** or **collaborators** **review** the **changes**, **comment**, **suggest improvements** or **approve the PR**. If everything looks good they merge the changes into the main branch.
 - **Collaboration :** Pull requests are used to collaborate on projects discuss the impact of changes & ensure that only quality code is merged into the main codebase.
 
 ### Important Considerations
 - **Pull Request vs. Push :** A pull request is not the same as pushing changes. A **push sends changes to a remote branch**, while a pull request initiates a **review** & **discussion** for merging those changes into the main codebase.
-- **Merge Conflicts :** Sometimes there can be conflicts between the changes in the pull request and the main branch. These conflicts need to be resolved before the PR can be merged.
+- **Merge Conflicts :** Sometimes there can be conflicts between the **changes in the pull request** & **the main branch**. These conflicts need to be resolved before the PR can be merged.
 
 ### Example Workflow
 - Fork and clone the original repository.
