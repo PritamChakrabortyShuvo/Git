@@ -189,8 +189,8 @@ Git cloning is the process of creating a **local copy** of a **remote repository
 - **Repository Copy :** Cloning pulls the entire repository including all commits, branches, tags & files. It’s a one-time operation to create the local copy.
 - **Linking to Remote :** When we clone a repository, Git automatically sets up a link to the remote repository (usually named origin). This allows us to pull updates and push changes in the future.
 ### Common Scenarios
-- **Starting a Project :** Developers clone repositories to get a full copy of a project's history and files to begin working.
-- **Open-Source Contributions :** In open-source projects, we typically clone the project, create changes locally, and then push to a forked version or submit pull requests.
+- **Starting a Project :** Developers clone repositories to get a full copy of a project's history & files to begin working.
+- **Open-Source Contributions :** In open-source projects, we typically **clone the project**, **create changes locally** & then **push to a forked version** or **submit pull requests**.
 ### Important Considerations
 **Forking vs Cloning :** If we want to contribute to a project we don’t own (especially in open-source), it’s **common to fork the repository** (create our own copy in GitHub) & then **clone that fork** to our **local machine**.
 
