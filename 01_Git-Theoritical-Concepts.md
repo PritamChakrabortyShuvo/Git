@@ -87,7 +87,7 @@ Committed files are those that have been saved to the Git repository. A commit i
 ### What is git add?
 **Git add** is a command **used to stage changes in Git** preparing them to be included in the **next commit**. It doesn’t actually commit the changes it simply **moves modified or new files from the working area to the staging area** (also known as the "index"). This step is crucial in Git’s workflow because only staged changes can be committed.
 <div align="center">
-    <img src="Diagrams/Add.png" alt="Project Logo" width=40%>
+    <img src="Diagrams/Add.png" alt="Project Logo" width=35%>
 </div>
 
 ### Key Concepts of `git add`
@@ -96,10 +96,10 @@ Committed files are those that have been saved to the Git repository. A commit i
 3. Tracking New Files
 4. Removing Changes from Staging
 ## Git Commit
-### What is Commit?
+### What is Git Commit?
 **Git commit** represents a **snapshot of the project at a specific point in time**. It stores changes made to the files in a repository and forms the backbone of Git's version control.
 <div align="center">
-    <img src="Diagrams/Commit.png" alt="Project Logo" width=40%>
+    <img src="Diagrams/Commit.png" alt="Project Logo" width=35%>
 </div>
 
 A commit includes:
@@ -123,10 +123,9 @@ A commit includes:
 ## Git Branches
 Git **branches** are an essential feature of version control that **allow us to work on different versions of a project simultaneously**. Branches enable **isolated development** meaning we can work on **new features**, **bug fixes** or **experiments** without **affecting the main codebase**. 
 <div align="center">
-    <img src="Diagrams/Branching.png" alt="Project Logo" width=70%>
+    <img src="Diagrams/Branching.png" alt="Project Logo" width=80%>
 </div>
 
-Here’s how Git branches work:
 ### 1. Main Branch (Master/Main)
 - The main branch is typically where the stable version of the code resides. It’s the default branch when a repository is initialized & it’s often called main (formerly master).
 - It holds production-ready code & all features or changes eventually get merged back into this branch.
