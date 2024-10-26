@@ -126,38 +126,38 @@ Git **branches** are an essential feature of version control that **allow us to 
     <img src="Diagrams/Branching.png" alt="Project Logo" width=80%>
 </div>
 
-### 1. Main Branch (Master/Main)
-- The main branch is typically where the stable version of the code resides. It’s the default branch when a repository is initialized & it’s often called main (formerly master).
-- It holds production-ready code & all features or changes eventually get merged back into this branch.
-### 2. Feature Branches
-- A feature branch is a separate branch created from the main branch where we can develop new features or make changes.
-- This branch keeps changes isolated until they are complete and ready to be merged into the main codebase.
+### 1. Main Branch (`master`/`main`)
+- The **`main`** branch is typically where the **stable version of the code resides**. **`main branch`** is the **default branch** when a repository is initialized & it’s often called **`main`** (formerly **`master`**).
+- It holds **production-ready code** & **all features** or **changes** eventually get merged back into this branch.
+### 2. Feature Branch
+- A **feature branch** is a **separate branch** created from the **`main branch`** where we can **develop new features** or **make changes**.
+- This branch **keeps changes isolated** until they are complete & **ready to be merged** into the **main codebase**.
 ### 3. Branch Creation
-We can create a branch at any point. A branch is simply a pointer to a specific commit in the project’s history. Once a branch is created any commits made on that branch will not affect other branches.
+- We can create a branch at any point. A branch is simply a **pointer to a specific commit** in the project’s history. Once a branch is created any commits made on that branch will not affect other branches.
 ### 4. Switching Branches
-- Switching between branches allows us to move back and forth between different lines of development. This makes it easy to pause work on one feature and work on another or go back to a previous version of the project.
+- **Switching between branches** allows us to **move back** & forth between different lines of development. This makes it **easy to pause work on one feature** & **work on another** or go back to a previous version of the project.
 ### 5. Merging Branches
-- When a branch is ready to be integrated with the main code we merge it back into the main branch. This can be a fast-forward merge or a more complex three-way merge if the two branches have diverged.
+- When a **branch is ready to be integrated with the main code** we **merge it back into the main branch**. This can be a **fast-forward merge** or a more complex **three-way merge** if the two branches have diverged.
 ### 6. Conflicts
-- If changes from different branches overlap Git may encounter conflicts during a merge. Conflicts need to be manually resolved before the merge can complete.
+- If changes from different branches **overlap Git** may **encounter conflicts** during a merge. **Conflicts** need to be **manually resolved before the merge** can complete.
 ### 7. Branch Management Best Practices
-- **Use Meaningful Names :** Name branches based on the feature or task, making it easy to understand the purpose of each branch.
-- **Merge frequently :** To avoid large, complicated merges, it’s a good idea to merge branches back into the main branch regularly.
+- **Use Meaningful Names :** Name branches based on the feature or task making it easy to understand the purpose of each branch.
+- **Merge frequently :** To avoid large, complicated merges it’s a good idea to merge branches back into the main branch regularly.
 - **Delete branches :** After a branch has been merged, it’s often deleted to keep the repository clean.
 
-Let's dive into branch merging and management in a **team environment**.
+Let's dive into branch merging and management in a **Team environment**.
 #### 1. Merging Branches
-Merging in Git combines the changes from one branch into another, often to incorporate new features or fixes into the **`main branch`**. There are two common types of merges:
-- **Fast-Forward Merge :** If there are no new commits on the **`main branch`**, Git can move the branch pointer forward without creating a new commit this is called a **Fast-Forward Merge**. It happens automatically if the branches haven’t diverged.
-- **Three-Way Merge :** Happens when both the main and feature branches have new commits. Git creates a new commit to combine changes from both branches.
-#### 2. How to Merge
+Merging in **Git combines the changes from one branch into another** often to incorporate new features or fixes into the **`main branch`**. There are two common types of merges:
+- **Fast-Forward Merge :** If there are **no new commits** on the **`main branch`**, Git can move the branch pointer forward **without creating a new commit** this is called a **Fast-Forward Merge**. It happens automatically if the branches haven’t diverged.
+- **Three-Way Merge :** Happens when **both the main & feature branches have new commits. Git creates a new commit to combine changes from both branches**.
+#### 2. How to Merge?
 1. **Switch to the Main Branch** (where the changes need to go).
 2. **Merge the Feature Branch into the Main Branch**.
 3. **Resolve Conflicts if any occur** (e.g., both branches changed the same line of code).
 #### 3. Merge Conflicts
-1. When two branches change the same part of a file, Git cannot automatically merge and shows a conflict.
+1. When **two branches change the same part of a file** Git cannot **automatically merge & shows a conflict**.
 2. We edit the file to choose which changes to keep.
-3. After resolving, commit the merge to finalize it.
+3. After resolving commit the merge to finalize it.
 #### 4. Working in Teams
 - **Use Feature Branches :** Each developer works on their own branch for a task or feature. Once done they merge their branch into the **`main branch`**.
 - **Merge Frequently :** To avoid conflicts keep merging changes from the main branch into your **`feature branch`** regularly.
@@ -166,7 +166,6 @@ Merging in Git combines the changes from one branch into another, often to incor
 - **Keep Branches Short :** Don't work on a **`feature branch`** for too long before merging it. Smaller, more frequent merges are easier to manage.
 - **Review code before Merging :** Use pull requests to get feedback from the team before adding changes to the main branch.
 - **Handle Conflicts Early :** Resolve conflicts as soon as they come up so they don’t pile up.
-
 ## Git Push
 In Git, Push is used to **upload local repository content** to a **remote repository**. Essentially, it **transfers committed changes** from your local repository to the remote making them available to others working on the project.
 <div align="center">
