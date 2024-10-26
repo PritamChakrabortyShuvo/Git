@@ -1,13 +1,13 @@
 # Introduction to Git
 <div align="center">
-    <img src="Diagrams/Git-Logo.png" alt="Project Logo" width=20%>
+    <img src="Diagrams/Git-Logo.png" alt="Project Logo" width=30%>
 </div>
 
 ## What is Git?
 Git is a **distributed version control system** designed to **track changes** in **source code** during software development. It allows multiple **developers to collaborate on a project** keeping a history of changes, facilitating collaboration & ensuring that every modification can be **traced**, **merged** or **reverted** as needed.
 
 ## Key Features of Git
-- **Content Tracker :** Git **captures snapshots of the entire project directory** & its **contents**. Instead of saving just file changes, Git stores the state of the whole project at the time of each commit efficiently managing versions and history across the project.
+- **Content Tracker :** Git **captures snapshots of the entire project directory** & its **contents**. Instead of saving just file changes. Git stores the state of the whole project at the time of each commit efficiently managing versions & history across the project.
 <div align="center">
     <img src="Diagrams/Content-Tracker.png" alt="Project Logo" width=80%>
 </div>
@@ -22,7 +22,7 @@ Git is a **distributed version control system** designed to **track changes** in
     <img src="Diagrams/Version-Control.png" alt="Project Logo" width=70%>
 </div>
 
-- **Branching and Merging :** Git allows developers to work on different features or fixes in parallel through **branches** which can later be merged into the main codebase.
+- **Branching and Merging :** Git **allows developers** to work on **different features** or fixes in parallel through **branches** which can later be **merged** into the main codebase.
 <div align="center">
     <img src="Diagrams/Branching-Merging.png" alt="Project Logo" width=70%>
 </div>
@@ -31,9 +31,8 @@ Git is a **distributed version control system** designed to **track changes** in
 Git supports two main types of repositories.
 1. **Local Repository**
 2. **Remote Repository**
-
 <div align="center">
-    <img src="Diagrams/Local-Remote-Repository-Architecture.png" alt="Project Logo" width=90%>
+    <img src="Diagrams/Local-Remote-Repository-Architecture.png" alt="Project Logo" width=80%>
 </div>
 
 ### 1. Local Repository 
