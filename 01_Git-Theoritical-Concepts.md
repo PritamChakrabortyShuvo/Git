@@ -167,7 +167,7 @@ Merging in **Git combines the changes from one branch into another** often to in
 - **Review code before Merging :** Use pull requests to get feedback from the team before adding changes to the main branch.
 - **Handle Conflicts Early :** Resolve conflicts as soon as they come up so they don’t pile up.
 ## Git Push
-In Git, Push is used to **upload local repository content** to a **remote repository**. Essentially, it **transfers committed changes** from your local repository to the remote making them available to others working on the project.
+In Git, **Push** is used to **upload local repository content** to a **remote repository**. Essentially, it **transfers committed changes** from **local repository to the remote repository** making them available to others working on the project.
 <div align="center">
     <img src="Diagrams/Push.png" alt="Project Logo" width=50%>
 </div>
