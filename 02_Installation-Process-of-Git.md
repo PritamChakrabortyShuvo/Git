@@ -17,16 +17,16 @@ To **Install Git** from scratch, we can follow the steps for different operating
 #### 4. Important Settings
 - **Adjusting PATH :** Choose "**Use Git from the command line and also from 3rd-party software**."
 - **Choose the SSH executable :** "**Use bundled OpenSSH**" is recommended.
-- **Configure the line ending conversions :** Choose "Checkout as-is, commit Unix-style line endings."
+- **Configure the line ending conversions :** Choose "**Checkout as-is**, **commit Unix-style line endings**."
 #### 5. Complete the Installation
-Continue following the wizard until you reach the final screen. Click Install to begin the installation.
-Once the installation is complete, click Finish to exit the wizard.
+**Continue** following the wizard until you reach the final screen. Click **`Install`** to begin the installation.
+Once the installation is complete click **`Finish`** to exit the wizard.
 ### Step 3. Verify Installation
-Open Command Prompt or PowerShell and Run :
+Open **Command Prompt** or **PowerShell** and **Run** :
 ```bash
     git --version
 ```
-This will output the installed Git version if successful.
+This will output the **installed Git version** if successful.
 ### Step 4. Set Up Git Configuration
 Open Git Bash or Command Prompt. In the terminal window enter the following command replacing **`"Your Name"`** with your actual name:
 ```bash
@@ -38,11 +38,11 @@ Next enter the following command replacing **`"your.email@example.com"`** with y
 ```
 This command sets your email address, which will be linked to your Git commits.
 ### Step 5. Verify Your Configuration
-To ensure that your username and email are set correctly, run the following command
+To ensure that your **Username** & **Email** are set correctly, run the following command
 ```bash
     git config --global --list
 ```
-This will display your Git configuration settings, and you should see your username and email listed.
+This will display your Git configuration settings & you should see your **Username** & **Email** listed.
 ### Conclusion 
 You have successfully installed Git on your Windows machine and configured it with your username and email. This setup enables you to manage projects and collaborate effectively using Git's version control features. You can now create repositories and track changes.
 ## Installation Process of Git on Ubuntu(Linux)
@@ -66,7 +66,7 @@ After installation check the version to ensure it's installed correctly.
     git --version
 ```
 ### Step 4. Set up Git Configuration
-To configure Git with your username and email
+To configure Git with your **Username** and **Email**
 ```bash 
     git config --global user.name "Your Name"
 ```
@@ -75,4 +75,4 @@ And,
     git config --global user.email "your.email@example.com"
 ```
 ### Conclusion
-You have successfully installed Git on your Ubuntu system and configured it with your username and email. This setup allows you to manage your projects and collaborate effectively using Git's version control capabilities. You can now create repositories and track changes seamlessly.
+You have successfully installed **Git** on your **Ubuntu system** & configured it with your **Username** & **Email**. This setup allows you to **manage your projects** & **collaborate effectively** using **Git's version control** capabilities. You can now create repositories and track changes seamlessly.
