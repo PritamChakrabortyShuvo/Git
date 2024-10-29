@@ -1,6 +1,6 @@
 # Process of Initializing a Remote Repository
 ## Step 1. Initialize a Local Repository
-Navigate to the directory where you want to create the repository. After that initialize the repository
+**Navigate to the directory** where you want to create the repository. After that initialize the repository
 ```bash
     git init
 ```
@@ -14,7 +14,7 @@ Commit the changes
     git commit -m "Initial commit"
 ```
 ## Step 3. Create a Remote Repository
-Go to a Git hosting platform. Create a new repository, give it a name & copy the repository URL (usually in HTTPS or SSH format).
+Go to a **Git hosting platform**. **Create a new repository**, give it a name & copy the **repository URL (usually in HTTPS or SSH format)**.
 ## Step 4. Renamed the Branch name to `main`
 The command is used to **rename** the **current branch** to **main**. The **`-M`** flag makes sure the branch is renamed forcefully even if a branch with the name **main** already exists.
 ```bash
@@ -22,7 +22,7 @@ The command is used to **rename** the **current branch** to **main**. The **`-M`
 ```
 **Note :** This is the **new name** for the **current branch**. It’s common for users to **rename** the **default branch** from **`master`** to **`main`** which has become a widely adopted standard in recent years.
 ## Step 5. Link the Local Repository to the Remote
-Add the remote URL to your local repository
+Add the **Remote URL** to your **Local repository**
 ```bash
     git remote add origin https://github.com/your-username/your-repo-name.git
 ```
