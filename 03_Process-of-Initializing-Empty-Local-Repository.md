@@ -48,7 +48,7 @@ You can also **stage all changes** in the working area with
     git add .
 ```
 ## Step 5. Check the Status Again
-Run **`git status`** to confirm that the file is now staged for commit. It should appear under "**`Changes to be committed.`**"
+Run **`git status`** to confirm that the file is now **staged for commit**. It should appear under "**`Changes to be committed.`**"
 ```bash
     git status
 ```
@@ -61,9 +61,9 @@ Once you're ready to save your changes run
 ```bash
     git commit -m "Initial commit"
 ```
-The **`-m`** flag allows you to add a commit message inline describing the changes made.
+The **`-m`** **flag allows you to add a commit message** inline describing the changes made.
 ## Step 7. Verify the Commit
-To confirm that your changes have been committed you can use
+To **confirm that your changes** have been **committed** you can use
 ```bash
     git log
 ```
@@ -71,10 +71,9 @@ To confirm that your changes have been committed you can use
     <img src="Diagrams/Git-Log.png" alt="Project Logo" width=70%>
 </div>
 
-This will display a log of commits made in the repository including the latest commit.
+This will display a **log of commits** made in the repository including the **latest commit**.
 
 ## Workflow 
-
 <div align="center">
     <img src="Diagrams/Git-Areas.png" alt="Project Logo" width=90%>
 </div>
