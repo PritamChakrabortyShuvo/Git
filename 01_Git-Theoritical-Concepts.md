@@ -27,6 +27,8 @@ Git is a **distributed version control system** designed to **track changes** in
     <img src="Diagrams/Branching-Merging.png" alt="Project Logo" width=70%>
 </div>
 
+## Git Terminology 
+
 ## Git Repository Types
 Git supports two main types of repositories.
 1. **Local Repository**
