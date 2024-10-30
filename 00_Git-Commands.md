@@ -24,11 +24,16 @@ Discards changes in the specified file in the working directory restoring it to 
 ## Git Commands : Commit Management and Log Viewing
 Creates a new commit with the changes that have been staged, using the provided commit message.
 ```bash
-    git commit -m "Your commit message here"
+    git commit -m "Your Commit Message"
 ```
+This command stages and commits all modified and deleted tracked files with a single-line message.
+```bash
+    git commit -a -m "Your Commit Message"
+```
+
 Modifies the last commit by adding any staged changes and replacing the commit message with a new one.
 ```bash
-    git commit --amend -m "Updated commit message"
+    git commit --amend -m "Your Updated Commit Message"
 ```
 **Note :** *We must **force push** it after **amending** by **`git push --force origin main`**.*
 
