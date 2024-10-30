@@ -37,6 +37,10 @@ Modifies the last commit by adding any staged changes and replacing the commit m
 ```
 **Note :** *We must **force push** it after **amending** by **`git push --force origin main`**.*
 
+This command shows the differences between changes in the working directory and the repository **highlighting modified lines**.
+```bash
+    git diff
+```
 Used to display the commit history of a Git repository.
 ```bash
     git log
