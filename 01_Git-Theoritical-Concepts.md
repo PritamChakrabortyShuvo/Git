@@ -113,10 +113,19 @@ Committed files are those that have been saved to the Git repository. A commit i
     <img src="Diagrams/Commit.png" alt="Project Logo" width=35%>
 </div>
 
-A commit includes:
+Git commits have **three parts**:
+1. **Commit**
+A commit includes metadata:
 - **Author information (name and email)**
-- **Commit message (a brief description of the changes)**
-- **Changes (diff) (what was added, modified or deleted)**
+- **Log message (a brief description of the changes)**
+- **Commit Time (what was added, modified or deleted)**
+2. **Tree**
+- Tracks the names and locations of files and directories in the repo.
+- Like a dictionary - mapping keys to files/directories
+3. **Blob**
+- BLOB means **Binary Large Object**
+- May contain data of any kind.
+- A compressed snapshot of a file's contents.
 ### Commit Message Guidelines
 - **Be clear :** The message should describe the changes and why they were made.
 - **Use imperative mood :** Commit messages should describe what the commit does when applied, such as:
