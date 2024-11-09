@@ -61,6 +61,9 @@ Filters the commit history to show only commits made by a specific author.
 ```bash
     git log --author="name"
 ```
+- Press **`space`** to show more recent commits
+- Press **`q`** to quit the log and return to the terminal.
+
 Shows the current status of the working directory and staging area, indicating which changes are staged, unstaged, or untracked.
 ```bash
     git status
