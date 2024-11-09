@@ -140,6 +140,13 @@ A commit includes metadata:
 - **Updated Image :** Replaced an outdated diagram with a new one.
 - **Refined Content :** Improved the clarity or readability of text.
 - **Fixed Comments :** Improved explanations in code comments.
+
+## Git Hash
+**Git Hash** is a **40-character string** of **numbers** & **letters** like this **`b22eb75a82a68b9c0f1c45b9f5a9b7abe281683a`**.
+- Pseudo-random number generator—hash function
+- Hashes allow data sharing between repos
+    - If two files are the same, then their hashes are the same
+    - Git only needs to compare hashes
 ## Git Branches
 Git **branches** are an essential feature of version control that **allow us to work on different versions of a project simultaneously**. Branches enable **isolated development** meaning we can work on **new features**, **bug fixes** or **experiments** without **affecting the main codebase**. 
 <div align="center">
