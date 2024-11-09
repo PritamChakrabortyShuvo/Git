@@ -140,7 +140,6 @@ A commit includes metadata:
 - **Updated Image :** Replaced an outdated diagram with a new one.
 - **Refined Content :** Improved the clarity or readability of text.
 - **Fixed Comments :** Improved explanations in code comments.
-
 ## Git Hash
 **Git Hash** is a **40-character string** of **numbers** & **letters** like this **`b22eb75a82a68b9c0f1c45b9f5a9b7abe281683a`**.
 - Pseudo-random number generator—hash function
