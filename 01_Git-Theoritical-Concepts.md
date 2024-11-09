@@ -110,7 +110,7 @@ Committed files are those that have been saved to the Git repository. A commit i
 ### What is Git Commit?
 **Git commit** represents a **snapshot of the project at a specific point in time**. It stores changes made to the files in a repository and forms the backbone of Git's version control.
 <div align="center">
-    <img src="Diagrams/Commit.png" alt="Project Logo" width=35%>
+    <img src="Diagrams/Commit-Structure.png" alt="Project Logo" width=60%>
 </div>
 
 Git commits have **three parts**:
